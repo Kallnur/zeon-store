@@ -1,0 +1,143 @@
+.ProductPage{
+    padding: 0 0 2rem 0;
+}
+.ProductPageBody{
+    position: relative;
+    min-width: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+    padding: 1rem 0;
+    height: initial;
+}
+
+.ProductCode{
+    display: inline-block;
+    margin: 1rem 0;
+    font-weight: 500;
+}
+
+.ProductCode span{font-weight: 400; margin-left: .3rem;}
+
+.ProductTitle{
+    font-weight: 500;
+    letter-spacing: .5px;
+    margin-bottom: .3rem;
+}
+
+.ProductPrice{margin: 1.1rem 0;}
+
+.ProductPrice *{
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.ProductPageImg{
+    width: 55%;
+}
+
+.sticky{
+    position: relative;
+    width: 45%;
+}
+
+.ProductDescBlock{
+    position: -webkit-sticky;
+    position: sticky;
+    width: 100%;
+    top: 15px;
+    padding: 1.5rem;
+    background: #fff;
+    height: initial;
+}
+.ProductColor{
+    display: flex;
+    gap: .3rem;
+    justify-content: start;
+    align-items: center;
+}
+.ProductDescColor{
+    display: flex;
+    width: 50%;
+    flex-wrap: nowrap;
+    justify-content: start;
+    gap: .5rem;
+    align-items: center;
+}
+.ProductColor span{font-weight: 500;}
+.ProductInfo h3{
+    margin: .8rem 0 .4rem 0; 
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.ProductInfo span{
+    color: #6A6A6A;
+    line-height: 28px;
+    font-size: .97rem;
+}
+.ProductDesc{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.2rem 0;
+    row-gap: 1rem;
+}
+.ProductDesc li{width: 45%;}
+.ProductBtns{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ProductDesc li strong{font-weight: 500;}
+.ProductBtns button{
+    height: 55px;
+    background: #1D1D1B;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    gap: 10px;
+    width: 90%;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.ProductBtns button svg{fill: #fff;}
+.ProductBtns button:nth-child(2){width: 50px;}
+.ProductPageImg{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3px;
+    row-gap: 1rem;
+}
+.ProductPageImg img{width: 49%;}
+.ProductPageImg img:nth-last-child(-n+4){
+    width: 23.5%;
+}
+
+@media screen and (max-width: 425px) {
+    .ProductPageBody{
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+    }
+    .ProductPageImg{width: 100%;}
+    .SwiperImg{
+        height: initial; 
+        /* min-width: 0; */
+        overflow: visible;
+    }
+    .sticky{width: 100%;}
+    .SwiperSlideImg{ width: inherit !important; }
+    .SwiperSlideImg img{width: 100%;}
+    .ProductDesc{flex-direction: column; row-gap: 1.5rem;}
+    .ProductDesc li {width: 100%;}
+    .ProductDesc li * {font-weight: 400;}
+}

@@ -1,0 +1,72 @@
+.Footer{
+    position: relative;
+    padding: 50px 0 70px 0;
+    background: #1D1D1B;
+}
+
+.FooterBody{
+    display: flex;
+    justify-content: space-between;
+}
+
+.Footer a{
+    color: #f2f2f2;
+}
+
+.Footer a:hover{
+    color: #F1E0F3;
+}
+
+.Footer h1{color: #fff; position: relative;}
+
+.Footer h1::before{
+    position: absolute;
+    width: 300px;
+    content: 'Developed by Zeon 2022';
+    bottom: -100%;
+    left: 0;
+    font-size: 14px;
+    color: #b9b9b9;
+}
+
+.FooterList{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.FooterList li{padding: 0 5px;}
+
+.FooterList li a{
+    color: #fff;
+    font-weight: 400;
+}
+
+.FooterList li:nth-child(1){margin-bottom: .5rem;}
+.FooterList li:nth-child(1) span{
+    display: inline-block;
+    font-weight: bold;
+    color: #fff;
+    width: 110%;
+}
+
+.FooterPs{
+    position: absolute;
+    bottom: 20px;
+    color: #B9B9B9;
+    left: null;
+}
+
+@media screen and (max-width: 425px) {
+    .FooterBody{
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .FooterPs{
+        position: relative;
+        padding-top: 1.5rem;
+        border-top: 1px solid #363635;
+    }
+}

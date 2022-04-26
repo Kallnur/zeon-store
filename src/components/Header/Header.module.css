@@ -1,0 +1,184 @@
+.Header{
+    position: relative;
+    width: 100%;
+    background: #fff;
+}
+
+.HeaderDesk{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.2rem;
+}
+.HeaderNavbar{
+    /* position: relative; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 65px;
+}
+.HeaderNavbar::after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 65px;
+    box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.05);
+    z-index: 1;
+}
+.HeaderList{
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    font-size: 17px;
+}
+
+.HeaderNavbar *{
+    font-size: 17px;
+    font-weight: 400;
+    z-index: 10;
+}
+
+.HeaderTel a{
+    margin-left: .5rem;
+}
+
+.HeaderTel span{
+    color: #979797;
+}
+
+.HeaderLogo{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.HeaderInputBlock{
+    width: 60%;
+    position: relative;
+    border: 1px solid #E0E0E0;
+    height: 44px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 15px;
+    background: #F8F8F8;
+}
+
+.HeaderInputBlock input{
+    border: none;
+    outline: none;
+    position: relative;
+    width: 90%;
+    height: 100%;
+    background: none;
+}
+
+.HeaderInputBlock button, .HeaderMobile button{
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+}
+
+.HeaderBasFav{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.HeaderBasFav a{
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0 25px;
+    gap: 1rem
+}
+.HeaderBasFav a:nth-child(1){
+    border-right: 1px solid #D3D3D3;
+}
+
+.HeaderBasFav a svg{
+    fill: #515151;
+}
+.HeaderMenu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff;
+    width: 370px;
+    height: 100vh;
+    padding: 1.3rem;
+    transform: translateX(-115%);
+}
+.HeaderMenuBody{
+    display: flex;
+    height: 90%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 1.2rem;
+}
+.HeaderMenu div .HeaderBasFav, .HeaderMenu div .HeaderList{
+    flex-direction: column;
+}
+.HeaderMenu div .HeaderBasFav a{align-items: flex-start; padding: 0;}
+.HeaderMenu div .HeaderBasFav *{border: none;}
+.HeaderMenu div .HeaderBasFav{
+    border-top: 2px solid #D3D3D3;
+    margin-top: 1.4rem;
+    padding-top: 1.4rem;
+    gap: 1.4rem;
+    align-items: flex-start;
+}
+.HeaderMenu .HeaderTel{margin-top: .5rem; position: relative;}
+.HeaderMenu .HeaderList{align-items: flex-start;}
+.HeaderMenuBody h1{font-weight: 500;}
+.HeaderMenu .HeaderTel::before{
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #393939;
+    top: 50%;
+    right: -12px;
+    transform: translateY(-50%);
+}
+
+.BasFavActive{position: relative;}
+.BasFavActive::before{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #E5271B;
+    border-radius: 50%;
+    top: -2px;right: 0;
+}
+
+.HeaderMobile{
+    display: none;
+}
+
+@media screen and (max-width: 425px) {
+    .HeaderDesk{
+        display: none;
+    }
+    .HeaderMobile{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        padding: .4rem 0;
+        align-items: center;
+    }
+    .HeaderMobile a img{
+        width: 111px;
+    }
+}

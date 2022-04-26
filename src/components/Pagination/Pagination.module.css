@@ -1,0 +1,47 @@
+.Pagination{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: .4rem;
+    margin: 1rem 0;
+}
+
+.Pagination span{cursor: pointer;}
+
+.PaginationBullet{
+    width: 50px;
+    height: 50px;
+    color: #979797;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+}
+
+.PaginationBullet:hover{
+    background: #1D1D1B;
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+.PaginationActive{
+    background: #1D1D1B;
+    color: #fff;
+    font-size: 1.1rem;
+}
+.PaginationBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+}
+.PaginationBtn svg{
+    width: 12px;
+    height: 24px;
+    transition: .3s;
+}
+
+.Pagination span:nth-child(1):hover svg{transform: translateX(-8px);}
+.Pagination span:last-child:hover svg{transform: translateX(8px);}

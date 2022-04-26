@@ -1,0 +1,59 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #393939;
+  font-family: 'Montserrat';
+}
+
+body{
+  background: #F8F8F8;
+  /* overflow-x: hidden; */
+}
+
+a{
+  text-decoration: none;
+}
+
+ul, ol{
+  list-style: none;
+}
+
+#root{
+  display: flex;
+  justify-content: center;
+}
+
+.container{
+  width: 85%;
+  margin: 0 auto;
+}
+.slider-container{
+  margin-bottom: 60px;
+}
+.App{
+  position: relative;
+  width: 100%;
+  /* overflow-x: hidden; */
+}
+
+@import url("./product.css");
+@import url("./collection.css");
+
+.TCItem-enter {
+  opacity: 0;
+  transform: translateY(50%);
+}
+.TCItem-enter-active {
+  opacity: 1;
+  transition: all 500ms ease-in;
+  transform: translateY(0%);
+}
+
+.homeMobSwiper{height: initial !important;}
+
+@media screen and (max-width: 425px) {
+  .container{width: 90%;}
+  .slider-container{width: 100%;}
+  .slider-container .swiper{height: 390px;}
+}

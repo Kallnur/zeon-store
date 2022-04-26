@@ -1,0 +1,8 @@
+.PagePath{
+    padding: 25px 0;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 425px) {
+    .PagePath{display: none;}
+}

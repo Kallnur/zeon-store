@@ -1,0 +1,1688 @@
+{
+  "product": [
+    {
+      "id": 1,
+      "url": ["https://imagizer.imageshack.com/img923/9082/tfCoZe.jpg"],
+      "collection": "Вечернее платье",
+      "price": 1365,
+      "currency": "р",
+      "perc": false,
+      "size": "42-50",
+      "amaunt": 5,
+      "desk": "За последние 35 лет бренд Bonucci из обычного производителя одежды превратился в широко узнаваемую марку, а его продукция – в синоним высокого качества и актуального стиля.  ",
+      "material": "Полиэстер",
+      "code": "Платье PL984/dakota",
+      "colors": [
+        {
+          "color": "Вроде синий",
+          "rgb": "rgb(180, 215, 209)",
+          "available": true
+        },
+        {
+          "color": "Почти зеленый",
+          "rgb": "rgb(179, 241, 172)",
+          "available": true
+        },
+        {
+          "color": "Нежно пурпурный",
+          "rgb": "rgb(0, 28, 114)",
+          "available": true
+        },
+        {
+          "color": "Коричневый наверное",
+          "rgb": "rgb(181, 133, 73)",
+          "available": true
+        },
+        {
+          "color": "Голубой",
+          "rgb": "rgb(187, 182, 248)",
+          "available": true
+        },
+        {
+          "color": "Белый",
+          "rgb": "rgb(255, 255, 255)",
+          "available": true
+        },
+        {
+          "color": "Сильверс",
+          "rgb": "rgb(144, 144, 145)",
+          "available": true
+        },
+        {
+          "color": "Розовый",
+          "rgb": "rgb(255, 110, 132)",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "url": [
+        "https://imagizer.imageshack.com/img924/963/lLb97x.jpg",
+        "https://imagizer.imageshack.com/img924/963/lLb97x.jpg",
+        "https://imagizer.imageshack.com/img924/963/lLb97x.jpg",
+        "https://imagizer.imageshack.com/img924/963/lLb97x.jpg"
+      ],
+      "collection": "Вечернее платье",
+      "price": 1555,
+      "currency": "р",
+      "perc": 20,
+      "size": "42-50",
+      "amaunt": 5,
+      "desk": "За последние 35 лет бренд Bonucci из обычного производителя одежды превратился в широко узнаваемую марку, а его продукция – в синоним высокого качества и актуального стиля.  ",
+      "material": "Полиэстер",
+      "code": "Платье XNLKWM/dakota",
+      "colors": [
+        {
+          "color": "Вроде синий",
+          "rgb": "rgb(180, 215, 209)",
+          "available": true
+        },
+        {
+          "color": "Почти зеленый",
+          "rgb": "rgb(179, 241, 172)",
+          "available": true
+        },
+        {
+          "color": "Нежно пурпурный",
+          "rgb": "rgb(0, 28, 114)",
+          "available": true
+        },
+        {
+          "color": "Коричневый наверное",
+          "rgb": "rgb(181, 133, 73)",
+          "available": true
+        },
+        {
+          "color": "Голубой",
+          "rgb": "rgb(187, 182, 248)",
+          "available": true
+        },
+        {
+          "color": "Белый",
+          "rgb": "rgb(255, 255, 255)",
+          "available": true
+        },
+        {
+          "color": "Сильверс",
+          "rgb": "rgb(144, 144, 145)",
+          "available": true
+        },
+        {
+          "color": "Розовый",
+          "rgb": "rgb(255, 110, 132)",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "url": ["https://imagizer.imageshack.com/img922/8317/Nyfmt3.jpg"],
+      "collection": "Платья",
+      "price": 1365,
+      "currency": "р",
+      "perc": 50,
+      "size": "42-50",
+      "amaunt": 5,
+      "desk": "За последние 35 лет бренд Bonucci из обычного производителя одежды превратился в широко узнаваемую марку, а его продукция – в синоним высокого качества и актуального стиля.  ",
+      "material": "Полиэстер",
+      "code": "Платье 3BK6ON/dakota",
+      "colors": [
+        {
+          "color": "Вроде синий",
+          "rgb": "rgb(180, 215, 209)",
+          "available": true
+        },
+        {
+          "color": "Почти зеленый",
+          "rgb": "rgb(179, 241, 172)",
+          "available": true
+        },
+        {
+          "color": "Нежно пурпурный",
+          "rgb": "rgb(0, 28, 114)",
+          "available": true
+        },
+        {
+          "color": "Коричневый наверное",
+          "rgb": "rgb(181, 133, 73)",
+          "available": true
+        },
+        {
+          "color": "Голубой",
+          "rgb": "rgb(187, 182, 248)",
+          "available": true
+        },
+        {
+          "color": "Белый",
+          "rgb": "rgb(255, 255, 255)",
+          "available": true
+        },
+        {
+          "color": "Сильверс",
+          "rgb": "rgb(144, 144, 145)",
+          "available": true
+        },
+        {
+          "color": "Розовый",
+          "rgb": "rgb(255, 110, 132)",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "url": ["https://imagizer.imageshack.com/img922/5935/aVP9P9.jpg"],
+      "collection": "Вечернее платье",
+      "price": 1600,
+      "currency": "р",
+      "perc": false,
+      "size": "42-50",
+      "amaunt": 5,
+      "desk": "За последние 35 лет бренд Bonucci из обычного производителя одежды превратился в широко узнаваемую марку, а его продукция – в синоним высокого качества и актуального стиля.  ",
+      "material": "Полиэстер",
+      "code": "Платье K5D763/dakota",
+      "colors": [
+        {
+          "color": "Вроде синий",
+          "rgb": "rgb(180, 215, 209)",
+          "available": true
+        },
+        {
+          "color": "Почти зеленый",
+          "rgb": "rgb(179, 241, 172)",
+          "available": true
+        },
+        {
+          "color": "Нежно пурпурный",
+          "rgb": "rgb(0, 28, 114)",
+          "available": true
+        },
+        {
+          "color": "Коричневый наверное",
+          "rgb": "rgb(181, 133, 73)",
+          "available": true
+        },
+        {
+          "color": "Голубой",
+          "rgb": "rgb(187, 182, 248)",
+          "available": true
+        },
+        {
+          "color": "Белый",
+          "rgb": "rgb(255, 255, 255)",
+          "available": true
+        },
+        {
+          "color": "Сильверс",
+          "rgb": "rgb(144, 144, 145)",
+          "available": true
+        },
+        {
+          "color": "Розовый",
+          "rgb": "rgb(255, 110, 132)",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "url": ["https://imagizer.imageshack.com/img924/2001/uA3EB7.jpg"],
+      "collection": "Платья",
+      "price": 1365,
+      "currency": "р",
+      "perc": 30,
+      "size": "42-50",
+      "amaunt": 5,
+      "desk": "За последние 35 лет бренд Bonucci из обычного производителя одежды превратился в широко узнаваемую марку, а его продукция – в синоним высокого качества и актуального стиля.  ",
+      "material": "Полиэстер",
+      "code": "Платье 7ZTJ3H/dakota",
+      "colors": [
+        {
+          "color": "Вроде синий",
+          "rgb": "rgb(180, 215, 209)",
+          "available": true
+        },
+        {
+          "color": "Почти зеленый",
+          "rgb": "rgb(179, 241, 172)",
+          "available": true
+        },
+        {
+          "color": "Нежно пурпурный",
+          "rgb": "rgb(0, 28, 114)",
+          "available": true
+        },
+        {
+          "color": "Коричневый наверное",
+          "rgb": "rgb(181, 133, 73)",
+          "available": true
+        },
+        {
+          "color": "Голубой",
+          "rgb": "rgb(187, 182, 248)",
+          "available": true
+        },
+        {
+          "color": "Белый",
+          "rgb": "rgb(255, 255, 255)",
+          "available": true
+        },
+        {
+          "color": "Сильверс",
+          "rgb": "rgb(144, 144, 145)",
+          "available": true
+        },
+        {
+          "color": "Розовый",
+          "rgb": "rgb(255, 110, 132)",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "url": ["https://imagizer.imageshack.com/img924/3892/CfhtW9.jpg"],
+      "collection": "Вечернее платье",
+      "price": 2000,
+      "currency": "р",
+      "perc": false,
+      "size": "42-50",
+      "amaunt": 5,
+      "desk": "За последние 35 лет бренд Bonucci из обычного производителя одежды превратился в широко узнаваемую марку, а его продукция – в синоним высокого качества и актуального стиля.  ",
+      "material": "Полиэстер",
+      "code": "Платье 94NGRM/dakota",
+      "colors": [
+        {
+          "color": "Вроде синий",
+          "rgb": "rgb(180, 215, 209)",
+          "available": true
+        },
+        {
+          "color": "Почти зеленый",
+          "rgb": "rgb(179, 241, 172)",
+          "available": true
+        },
+        {
+          "color": "Нежно пурпурный",
+          "rgb": "rgb(0, 28, 114)",
+          "available": true
+        },
+        {
+          "color": "Коричневый наверное",
+          "rgb": "rgb(181, 133, 73)",
+          "available": true
+        },
+        {
+          "color": "Голубой",
+          "rgb": "rgb(187, 182, 248)",
+          "available": true
+        },
+        {
+          "color": "Белый",
+          "rgb": "rgb(255, 255, 255)",
+          "available": true
+        },
+        {
+          "color": "Сильверс",
+          "rgb": "rgb(144, 144, 145)",
+          "available": true
+        },
+        {
+          "color": "Розовый",
+          "rgb": "rgb(255, 110, 132)",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "url": [
+        "https://imagizer.imageshack.com/img922/7382/KedvKa.jpg",
+        "https://imagizer.imageshack.com/img922/7382/KedvKa.jpg",
+        "https://imagizer.imageshack.com/img922/7382/KedvKa.jpg"
+      ],
+      "collection": "Платья",
+      "price": 1365,
+      "currency": "р",
+      "perc": 50,
+      "size": "42-50",
+      "amaunt": 5,
+      "desk": "За последние 35 лет бренд Bonucci из обычного производителя одежды превратился в широко узнаваемую марку, а его продукция – в синоним высокого качества и актуального стиля.  ",
+      "material": "Полиэстер",
+      "code": "Платье 97Y6W6/dakota",
+      "colors": [
+        {
+          "color": "Вроде синий",
+          "rgb": "rgb(180, 215, 209)",
+          "available": true
+        },
+        {
+          "color": "Почти зеленый",
+          "rgb": "rgb(179, 241, 172)",
+          "available": true
+        },
+        {
+          "color": "Нежно пурпурный",
+          "rgb": "rgb(0, 28, 114)",
+          "available": true
+        },
+        {
+          "color": "Коричневый наверное",
+          "rgb": "rgb(181, 133, 73)",
+          "available": true
+        },
+        {
+          "color": "Голубой",
+          "rgb": "rgb(187, 182, 248)",
+          "available": true
+        },
+        {
+          "color": "Белый",
+          "rgb": "rgb(255, 255, 255)",
+          "available": true
+        },
+        {
+          "color": "Сильверс",
+          "rgb": "rgb(144, 144, 145)",
+          "available": true
+        },
+        {
+          "color": "Розовый",
+          "rgb": "rgb(255, 110, 132)",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "url": ["https://imagizer.imageshack.com/img922/1803/0TJHHB.jpg"],
+      "collection": "Вечернее платье",
+      "price": 1365,
+      "currency": "р",
+      "perc": false,
+      "size": "42-50",
+      "amaunt": 5,
+      "desk": "За последние 35 лет бренд Bonucci из обычного производителя одежды превратился в широко узнаваемую марку, а его продукция – в синоним высокого качества и актуального стиля.  ",
+      "material": "Полиэстер",
+      "code": "Платье 5867W0/dakota",
+      "colors": [
+        {
+          "color": "Вроде синий",
+          "rgb": "rgb(180, 215, 209)",
+          "available": true
+        },
+        {
+          "color": "Почти зеленый",
+          "rgb": "rgb(179, 241, 172)",
+          "available": true
+        },
+        {
+          "color": "Нежно пурпурный",
+          "rgb": "rgb(0, 28, 114)",
+          "available": true
+        },
+        {
+          "color": "Коричневый наверное",
+          "rgb": "rgb(181, 133, 73)",
+          "available": true
+        },
+        {
+          "color": "Голубой",
+          "rgb": "rgb(187, 182, 248)",
+          "available": true
+        },
+        {
+          "color": "Белый",
+          "rgb": "rgb(255, 255, 255)",
+          "available": true
+        },
+        {
+          "color": "Сильверс",
+          "rgb": "rgb(144, 144, 145)",
+          "available": true
+        },
+        {
+          "color": "Розовый",
+          "rgb": "rgb(255, 110, 132)",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "url": ["https://imagizer.imageshack.com/img924/963/lLb97x.jpg"],
+      "collection": "Юбки",
+      "price": 1750,
+      "currency": "р",
+      "perc": false,
+      "size": "42-50",
+      "amaunt": 5,
+      "desk": "За последние 35 лет бренд Bonucci из обычного производителя одежды превратился в широко узнаваемую марку, а его продукция – в синоним высокого качества и актуального стиля.  ",
+      "material": "Полиэстер",
+      "code": "Платье Q65Y7P/dakota",
+      "colors": [
+        {
+          "color": "Вроде синий",
+          "rgb": "rgb(180, 215, 209)",
+          "available": true
+        },
+        {
+          "color": "Почти зеленый",
+          "rgb": "rgb(179, 241, 172)",
+          "available": true
+        },
+        {
+          "color": "Нежно пурпурный",
+          "rgb": "rgb(0, 28, 114)",
+          "available": true
+        },
+        {
+          "color": "Коричневый наверное",
+          "rgb": "rgb(181, 133, 73)",
+          "available": true
+        },
+        {
+          "color": "Голубой",
+          "rgb": "rgb(187, 182, 248)",
+          "available": true
+        },
+        {
+          "color": "Белый",
+          "rgb": "rgb(255, 255, 255)",
+          "available": true
+        },
+        {
+          "color": "Сильверс",
+          "rgb": "rgb(144, 144, 145)",
+          "available": true
+        },
+        {
+          "color": "Розовый",
+          "rgb": "rgb(255, 110, 132)",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "url": ["https://imagizer.imageshack.com/img922/7373/iuEy5i.jpg"],
+      "collection": "Вечернее платье",
+      "price": 1400,
+      "currency": "р",
+      "perc": false,
+      "size": "42-50",
+      "amaunt": 5,
+      "desk": "За последние 35 лет бренд Bonucci из обычного производителя одежды превратился в широко узнаваемую марку, а его продукция – в синоним высокого качества и актуального стиля.  ",
+      "material": "Полиэстер",
+      "code": "Платье I60LAG/dakota",
+      "colors": [
+        {
+          "color": "Вроде синий",
+          "rgb": "rgb(180, 215, 209)",
+          "available": true
+        },
+        {
+          "color": "Почти зеленый",
+          "rgb": "rgb(179, 241, 172)",
+          "available": true
+        },
+        {
+          "color": "Нежно пурпурный",
+          "rgb": "rgb(0, 28, 114)",
+          "available": true
+        },
+        {
+          "color": "Коричневый наверное",
+          "rgb": "rgb(181, 133, 73)",
+          "available": true
+        },
+        {
+          "color": "Голубой",
+          "rgb": "rgb(187, 182, 248)",
+          "available": true
+        },
+        {
+          "color": "Белый",
+          "rgb": "rgb(255, 255, 255)",
+          "available": true
+        },
+        {
+          "color": "Сильверс",
+          "rgb": "rgb(144, 144, 145)",
+          "available": true
+        },
+        {
+          "color": "Розовый",
+          "rgb": "rgb(255, 110, 132)",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "url": ["https://imagizer.imageshack.com/img923/3513/ZdyFS2.jpg"],
+      "collection": "Юбки",
+      "price": 1365,
+      "currency": "р",
+      "perc": false,
+      "size": "42-50",
+      "amaunt": 5,
+      "desk": "За последние 35 лет бренд Bonucci из обычного производителя одежды превратился в широко узнаваемую марку, а его продукция – в синоним высокого качества и актуального стиля.  ",
+      "material": "Полиэстер",
+      "code": "Платье F5BX4O/dakota",
+      "colors": [
+        {
+          "color": "Вроде синий",
+          "rgb": "rgb(180, 215, 209)",
+          "available": true
+        },
+        {
+          "color": "Почти зеленый",
+          "rgb": "rgb(179, 241, 172)",
+          "available": true
+        },
+        {
+          "color": "Нежно пурпурный",
+          "rgb": "rgb(0, 28, 114)",
+          "available": true
+        },
+        {
+          "color": "Коричневый наверное",
+          "rgb": "rgb(181, 133, 73)",
+          "available": true
+        },
+        {
+          "color": "Голубой",
+          "rgb": "rgb(187, 182, 248)",
+          "available": true
+        },
+        {
+          "color": "Белый",
+          "rgb": "rgb(255, 255, 255)",
+          "available": true
+        },
+        {
+          "color": "Сильверс",
+          "rgb": "rgb(144, 144, 145)",
+          "available": true
+        },
+        {
+          "color": "Розовый",
+          "rgb": "rgb(255, 110, 132)",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "url": ["https://imagizer.imageshack.com/img923/9454/hfNtHk.jpg"],
+      "collection": "Юбки",
+      "price": 1365,
+      "currency": "р",
+      "perc": 20,
+      "size": "42-50",
+      "amaunt": 5,
+      "desk": "За последние 35 лет бренд Bonucci из обычного производителя одежды превратился в широко узнаваемую марку, а его продукция – в синоним высокого качества и актуального стиля.  ",
+      "material": "Полиэстер",
+      "code": "Платье YJSY00/dakota",
+      "colors": [
+        {
+          "color": "Вроде синий",
+          "rgb": "rgb(180, 215, 209)",
+          "available": true
+        },
+        {
+          "color": "Почти зеленый",
+          "rgb": "rgb(179, 241, 172)",
+          "available": true
+        },
+        {
+          "color": "Нежно пурпурный",
+          "rgb": "rgb(0, 28, 114)",
+          "available": true
+        },
+        {
+          "color": "Коричневый наверное",
+          "rgb": "rgb(181, 133, 73)",
+          "available": true
+        },
+        {
+          "color": "Голубой",
+          "rgb": "rgb(187, 182, 248)",
+          "available": true
+        },
+        {
+          "color": "Белый",
+          "rgb": "rgb(255, 255, 255)",
+          "available": true
+        },
+        {
+          "color": "Сильверс",
+          "rgb": "rgb(144, 144, 145)",
+          "available": true
+        },
+        {
+          "color": "Розовый",
+          "rgb": "rgb(255, 110, 132)",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "url": ["https://imagizer.imageshack.com/img923/9454/hfNtHk.jpg"],
+      "collection": "Вечернее платье",
+      "price": 1365,
+      "currency": "р",
+      "perc": 50,
+      "size": "42-50",
+      "amaunt": 5,
+      "desk": "За последние 35 лет бренд Bonucci из обычного производителя одежды превратился в широко узнаваемую марку, а его продукция – в синоним высокого качества и актуального стиля.  ",
+      "material": "Полиэстер",
+      "code": "Платье 5YYRZE/dakota",
+      "colors": [
+        {
+          "color": "Вроде синий",
+          "rgb": "rgb(180, 215, 209)",
+          "available": true
+        },
+        {
+          "color": "Почти зеленый",
+          "rgb": "rgb(179, 241, 172)",
+          "available": true
+        },
+        {
+          "color": "Нежно пурпурный",
+          "rgb": "rgb(0, 28, 114)",
+          "available": true
+        },
+        {
+          "color": "Коричневый наверное",
+          "rgb": "rgb(181, 133, 73)",
+          "available": true
+        },
+        {
+          "color": "Голубой",
+          "rgb": "rgb(187, 182, 248)",
+          "available": true
+        },
+        {
+          "color": "Белый",
+          "rgb": "rgb(255, 255, 255)",
+          "available": true
+        },
+        {
+          "color": "Сильверс",
+          "rgb": "rgb(144, 144, 145)",
+          "available": true
+        },
+        {
+          "color": "Розовый",
+          "rgb": "rgb(255, 110, 132)",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "url": [
+        "https://imagizer.imageshack.com/img922/1803/0TJHHB.jpg",
+        "https://imagizer.imageshack.com/img922/1803/0TJHHB.jpg",
+        "https://imagizer.imageshack.com/img922/1803/0TJHHB.jpg"
+      ],
+      "collection": "Вечернее платье",
+      "price": 1365,
+      "currency": "р",
+      "perc": false,
+      "size": "42-50",
+      "amaunt": 5,
+      "desk": "За последние 35 лет бренд Bonucci из обычного производителя одежды превратился в широко узнаваемую марку, а его продукция – в синоним высокого качества и актуального стиля.  ",
+      "material": "Полиэстер",
+      "code": "Платье 1K64VU/dakota",
+      "colors": [
+        {
+          "color": "Вроде синий",
+          "rgb": "rgb(180, 215, 209)",
+          "available": true
+        },
+        {
+          "color": "Почти зеленый",
+          "rgb": "rgb(179, 241, 172)",
+          "available": true
+        },
+        {
+          "color": "Нежно пурпурный",
+          "rgb": "rgb(0, 28, 114)",
+          "available": true
+        },
+        {
+          "color": "Коричневый наверное",
+          "rgb": "rgb(181, 133, 73)",
+          "available": true
+        },
+        {
+          "color": "Голубой",
+          "rgb": "rgb(187, 182, 248)",
+          "available": true
+        },
+        {
+          "color": "Белый",
+          "rgb": "rgb(255, 255, 255)",
+          "available": true
+        },
+        {
+          "color": "Сильверс",
+          "rgb": "rgb(144, 144, 145)",
+          "available": true
+        },
+        {
+          "color": "Розовый",
+          "rgb": "rgb(255, 110, 132)",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "url": ["https://imagizer.imageshack.com/img922/8317/Nyfmt3.jpg"],
+      "collection": "Юбки",
+      "price": 1750,
+      "currency": "р",
+      "perc": 20,
+      "size": "42-50",
+      "amaunt": 5,
+      "desk": "За последние 35 лет бренд Bonucci из обычного производителя одежды превратился в широко узнаваемую марку, а его продукция – в синоним высокого качества и актуального стиля.  ",
+      "material": "Полиэстер",
+      "code": "Платье VXI204/dakota",
+      "colors": [
+        {
+          "color": "Вроде синий",
+          "rgb": "rgb(180, 215, 209)",
+          "available": true
+        },
+        {
+          "color": "Почти зеленый",
+          "rgb": "rgb(179, 241, 172)",
+          "available": true
+        },
+        {
+          "color": "Нежно пурпурный",
+          "rgb": "rgb(0, 28, 114)",
+          "available": true
+        },
+        {
+          "color": "Коричневый наверное",
+          "rgb": "rgb(181, 133, 73)",
+          "available": true
+        },
+        {
+          "color": "Голубой",
+          "rgb": "rgb(187, 182, 248)",
+          "available": true
+        },
+        {
+          "color": "Белый",
+          "rgb": "rgb(255, 255, 255)",
+          "available": true
+        },
+        {
+          "color": "Сильверс",
+          "rgb": "rgb(144, 144, 145)",
+          "available": true
+        },
+        {
+          "color": "Розовый",
+          "rgb": "rgb(255, 110, 132)",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "url": ["https://imagizer.imageshack.com/img922/7373/iuEy5i.jpg"],
+      "collection": "Вечернее платье",
+      "price": 1400,
+      "currency": "р",
+      "perc": false,
+      "size": "42-50",
+      "amaunt": 5,
+      "desk": "За последние 35 лет бренд Bonucci из обычного производителя одежды превратился в широко узнаваемую марку, а его продукция – в синоним высокого качества и актуального стиля.  ",
+      "material": "Полиэстер",
+      "code": "Платье QY40MJ/dakota",
+      "colors": [
+        {
+          "color": "Вроде синий",
+          "rgb": "rgb(180, 215, 209)",
+          "available": true
+        },
+        {
+          "color": "Почти зеленый",
+          "rgb": "rgb(179, 241, 172)",
+          "available": true
+        },
+        {
+          "color": "Нежно пурпурный",
+          "rgb": "rgb(0, 28, 114)",
+          "available": true
+        },
+        {
+          "color": "Коричневый наверное",
+          "rgb": "rgb(181, 133, 73)",
+          "available": true
+        },
+        {
+          "color": "Голубой",
+          "rgb": "rgb(187, 182, 248)",
+          "available": true
+        },
+        {
+          "color": "Белый",
+          "rgb": "rgb(255, 255, 255)",
+          "available": true
+        },
+        {
+          "color": "Сильверс",
+          "rgb": "rgb(144, 144, 145)",
+          "available": true
+        },
+        {
+          "color": "Розовый",
+          "rgb": "rgb(255, 110, 132)",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "url": [
+        "https://imagizer.imageshack.com/img923/9454/hfNtHk.jpg",
+        "https://imagizer.imageshack.com/img923/9454/hfNtHk.jpg",
+        "https://imagizer.imageshack.com/img923/9454/hfNtHk.jpg"
+      ],
+      "collection": "Джинсы",
+      "price": 1770,
+      "currency": "р",
+      "perc": false,
+      "size": "42-50",
+      "amaunt": 5,
+      "desk": "За последние 35 лет бренд Bonucci из обычного производителя одежды превратился в широко узнаваемую марку, а его продукция – в синоним высокого качества и актуального стиля.  ",
+      "material": "Полиэстер",
+      "code": "Платье QPL3MJ/dakota",
+      "colors": [
+        {
+          "color": "Вроде синий",
+          "rgb": "rgb(180, 215, 209)",
+          "available": true
+        },
+        {
+          "color": "Почти зеленый",
+          "rgb": "rgb(179, 241, 172)",
+          "available": true
+        },
+        {
+          "color": "Нежно пурпурный",
+          "rgb": "rgb(0, 28, 114)",
+          "available": true
+        },
+        {
+          "color": "Коричневый наверное",
+          "rgb": "rgb(181, 133, 73)",
+          "available": true
+        },
+        {
+          "color": "Голубой",
+          "rgb": "rgb(187, 182, 248)",
+          "available": true
+        },
+        {
+          "color": "Белый",
+          "rgb": "rgb(255, 255, 255)",
+          "available": true
+        },
+        {
+          "color": "Сильверс",
+          "rgb": "rgb(144, 144, 145)",
+          "available": true
+        },
+        {
+          "color": "Розовый",
+          "rgb": "rgb(255, 110, 132)",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "url": ["https://imagizer.imageshack.com/img923/9454/hfNtHk.jpg"],
+      "collection": "Вечернее платье",
+      "price": 1365,
+      "currency": "р",
+      "perc": 20,
+      "size": "42-50",
+      "amaunt": 5,
+      "desk": "За последние 35 лет бренд Bonucci из обычного производителя одежды превратился в широко узнаваемую марку, а его продукция – в синоним высокого качества и актуального стиля.  ",
+      "material": "Полиэстер",
+      "code": "Платье IJSJ70/dakota",
+      "colors": [
+        {
+          "color": "Вроде синий",
+          "rgb": "rgb(180, 215, 209)",
+          "available": true
+        },
+        {
+          "color": "Почти зеленый",
+          "rgb": "rgb(179, 241, 172)",
+          "available": true
+        },
+        {
+          "color": "Нежно пурпурный",
+          "rgb": "rgb(0, 28, 114)",
+          "available": true
+        },
+        {
+          "color": "Коричневый наверное",
+          "rgb": "rgb(181, 133, 73)",
+          "available": true
+        },
+        {
+          "color": "Голубой",
+          "rgb": "rgb(187, 182, 248)",
+          "available": true
+        },
+        {
+          "color": "Белый",
+          "rgb": "rgb(255, 255, 255)",
+          "available": true
+        },
+        {
+          "color": "Сильверс",
+          "rgb": "rgb(144, 144, 145)",
+          "available": true
+        },
+        {
+          "color": "Розовый",
+          "rgb": "rgb(255, 110, 132)",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "url": ["https://imagizer.imageshack.com/img922/7373/iuEy5i.jpg"],
+      "collection": "Джинсы",
+      "price": 2100,
+      "currency": "р",
+      "perc": 40,
+      "size": "42-50",
+      "amaunt": 5,
+      "desk": "За последние 35 лет бренд Bonucci из обычного производителя одежды превратился в широко узнаваемую марку, а его продукция – в синоним высокого качества и актуального стиля.  ",
+      "material": "Полиэстер",
+      "code": "Платье PY90LJ/dakota",
+      "colors": [
+        {
+          "color": "Вроде синий",
+          "rgb": "rgb(180, 215, 209)",
+          "available": true
+        },
+        {
+          "color": "Почти зеленый",
+          "rgb": "rgb(179, 241, 172)",
+          "available": true
+        },
+        {
+          "color": "Нежно пурпурный",
+          "rgb": "rgb(0, 28, 114)",
+          "available": true
+        },
+        {
+          "color": "Коричневый наверное",
+          "rgb": "rgb(181, 133, 73)",
+          "available": true
+        },
+        {
+          "color": "Голубой",
+          "rgb": "rgb(187, 182, 248)",
+          "available": true
+        },
+        {
+          "color": "Белый",
+          "rgb": "rgb(255, 255, 255)",
+          "available": true
+        },
+        {
+          "color": "Сильверс",
+          "rgb": "rgb(144, 144, 145)",
+          "available": true
+        },
+        {
+          "color": "Розовый",
+          "rgb": "rgb(255, 110, 132)",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "url": ["https://imagizer.imageshack.com/img922/7373/iuEy5i.jpg"],
+      "collection": "Вечернее платье",
+      "price": 1400,
+      "currency": "р",
+      "perc": false,
+      "size": "42-50",
+      "amaunt": 5,
+      "desk": "За последние 35 лет бренд Bonucci из обычного производителя одежды превратился в широко узнаваемую марку, а его продукция – в синоним высокого качества и актуального стиля.  ",
+      "material": "Полиэстер",
+      "code": "Платье TB405J/dakota",
+      "colors": [
+        {
+          "color": "Вроде синий",
+          "rgb": "rgb(180, 215, 209)",
+          "available": true
+        },
+        {
+          "color": "Почти зеленый",
+          "rgb": "rgb(179, 241, 172)",
+          "available": true
+        },
+        {
+          "color": "Нежно пурпурный",
+          "rgb": "rgb(0, 28, 114)",
+          "available": true
+        },
+        {
+          "color": "Коричневый наверное",
+          "rgb": "rgb(181, 133, 73)",
+          "available": true
+        },
+        {
+          "color": "Голубой",
+          "rgb": "rgb(187, 182, 248)",
+          "available": true
+        },
+        {
+          "color": "Белый",
+          "rgb": "rgb(255, 255, 255)",
+          "available": true
+        },
+        {
+          "color": "Сильверс",
+          "rgb": "rgb(144, 144, 145)",
+          "available": true
+        },
+        {
+          "color": "Розовый",
+          "rgb": "rgb(255, 110, 132)",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "url": [
+        "https://imagizer.imageshack.com/img923/9454/hfNtHk.jpg",
+        "https://imagizer.imageshack.com/img923/9454/hfNtHk.jpg",
+        "https://imagizer.imageshack.com/img923/9454/hfNtHk.jpg"
+      ],
+      "collection": "Джинсы",
+      "price": 1770,
+      "currency": "р",
+      "perc": false,
+      "size": "42-50",
+      "amaunt": 5,
+      "desk": "За последние 35 лет бренд Bonucci из обычного производителя одежды превратился в широко узнаваемую марку, а его продукция – в синоним высокого качества и актуального стиля.  ",
+      "material": "Полиэстер",
+      "code": "Платье Q1L2M9/dakota",
+      "colors": [
+        {
+          "color": "Вроде синий",
+          "rgb": "rgb(180, 215, 209)",
+          "available": true
+        },
+        {
+          "color": "Почти зеленый",
+          "rgb": "rgb(179, 241, 172)",
+          "available": true
+        },
+        {
+          "color": "Нежно пурпурный",
+          "rgb": "rgb(0, 28, 114)",
+          "available": true
+        },
+        {
+          "color": "Коричневый наверное",
+          "rgb": "rgb(181, 133, 73)",
+          "available": true
+        },
+        {
+          "color": "Голубой",
+          "rgb": "rgb(187, 182, 248)",
+          "available": true
+        },
+        {
+          "color": "Белый",
+          "rgb": "rgb(255, 255, 255)",
+          "available": true
+        },
+        {
+          "color": "Сильверс",
+          "rgb": "rgb(144, 144, 145)",
+          "available": true
+        },
+        {
+          "color": "Розовый",
+          "rgb": "rgb(255, 110, 132)",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "url": ["https://imagizer.imageshack.com/img922/7373/iuEy5i.jpg"],
+      "collection": "Вечернее платье",
+      "price": 1365,
+      "currency": "р",
+      "perc": 20,
+      "size": "42-50",
+      "amaunt": 5,
+      "desk": "За последние 35 лет бренд Bonucci из обычного производителя одежды превратился в широко узнаваемую марку, а его продукция – в синоним высокого качества и актуального стиля.  ",
+      "material": "Полиэстер",
+      "code": "Платье SJSJ77/dakota",
+      "colors": [
+        {
+          "color": "Вроде синий",
+          "rgb": "rgb(180, 215, 209)",
+          "available": true
+        },
+        {
+          "color": "Почти зеленый",
+          "rgb": "rgb(179, 241, 172)",
+          "available": true
+        },
+        {
+          "color": "Нежно пурпурный",
+          "rgb": "rgb(0, 28, 114)",
+          "available": true
+        },
+        {
+          "color": "Коричневый наверное",
+          "rgb": "rgb(181, 133, 73)",
+          "available": true
+        },
+        {
+          "color": "Голубой",
+          "rgb": "rgb(187, 182, 248)",
+          "available": true
+        },
+        {
+          "color": "Белый",
+          "rgb": "rgb(255, 255, 255)",
+          "available": true
+        },
+        {
+          "color": "Сильверс",
+          "rgb": "rgb(144, 144, 145)",
+          "available": true
+        },
+        {
+          "color": "Розовый",
+          "rgb": "rgb(255, 110, 132)",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "url": ["https://imagizer.imageshack.com/img922/7373/iuEy5i.jpg"],
+      "collection": "Вечернее платье",
+      "price": 2100,
+      "currency": "р",
+      "perc": 40,
+      "size": "42-50",
+      "amaunt": 5,
+      "desk": "За последние 35 лет бренд Bonucci из обычного производителя одежды превратился в широко узнаваемую марку, а его продукция – в синоним высокого качества и актуального стиля.  ",
+      "material": "Полиэстер",
+      "code": "Платье LY50PJ/dakota",
+      "colors": [
+        {
+          "color": "Вроде синий",
+          "rgb": "rgb(180, 215, 209)",
+          "available": true
+        },
+        {
+          "color": "Почти зеленый",
+          "rgb": "rgb(179, 241, 172)",
+          "available": true
+        },
+        {
+          "color": "Нежно пурпурный",
+          "rgb": "rgb(0, 28, 114)",
+          "available": true
+        },
+        {
+          "color": "Коричневый наверное",
+          "rgb": "rgb(181, 133, 73)",
+          "available": true
+        },
+        {
+          "color": "Голубой",
+          "rgb": "rgb(187, 182, 248)",
+          "available": true
+        },
+        {
+          "color": "Белый",
+          "rgb": "rgb(255, 255, 255)",
+          "available": true
+        },
+        {
+          "color": "Сильверс",
+          "rgb": "rgb(144, 144, 145)",
+          "available": true
+        },
+        {
+          "color": "Розовый",
+          "rgb": "rgb(255, 110, 132)",
+          "available": true
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "url": ["https://imagizer.imageshack.com/img922/7373/iuEy5i.jpg"],
+      "collection": "Вечернее платье",
+      "price": 1400,
+      "currency": "р",
+      "perc": false,
+      "size": "42-50",
+      "amaunt": 5,
+      "desk": "За последние 35 лет бренд Bonucci из обычного производителя одежды превратился в широко узнаваемую марку, а его продукция – в синоним высокого качества и актуального стиля.  ",
+      "material": "Полиэстер",
+      "code": "Платье YAL05J/dakota",
+      "colors": [
+        {
+          "color": "Вроде синий",
+          "rgb": "rgb(180, 215, 209)",
+          "available": true
+        },
+        {
+          "color": "Почти зеленый",
+          "rgb": "rgb(179, 241, 172)",
+          "available": true
+        },
+        {
+          "color": "Нежно пурпурный",
+          "rgb": "rgb(0, 28, 114)",
+          "available": true
+        },
+        {
+          "color": "Коричневый наверное",
+          "rgb": "rgb(181, 133, 73)",
+          "available": true
+        },
+        {
+          "color": "Голубой",
+          "rgb": "rgb(187, 182, 248)",
+          "available": true
+        },
+        {
+          "color": "Белый",
+          "rgb": "rgb(255, 255, 255)",
+          "available": true
+        },
+        {
+          "color": "Сильверс",
+          "rgb": "rgb(144, 144, 145)",
+          "available": true
+        },
+        {
+          "color": "Розовый",
+          "rgb": "rgb(255, 110, 132)",
+          "available": true
+        }
+      ]
+    }
+  ],
+  "offer": {
+    "title": "Публичная оферта ",
+    "body": {
+      "paraph1": "Sit ullamcorper at gravida quis feugiat. Laoreet leo dolor, dui eget sit viverra justo, malesuada. Viverra pharetra, augue neque felis enim dui id cum. At pellentesque diam nulla ac amet quisque quis. Est consectetur ullamcorper curabitur quis viverra hac molestie. Elit pulvinar congue ut amet adipiscing felis tincidunt. Amet quis varius aliquam hendrerit tempus. Sed sit diam quis scelerisque congu econgu econgu econguecongu econguecon guecon guecon guecong ueconguecong uec ongue.",
+      "parapg2": "Sit ullamcorper at gravida quis feugiat. Laoreet leo dolor, dui eget sit viverra justo, malesuada. Viverra pharetra, augue neque  Sit ullamcorper at gravida quis feugiat. Laoreet leo dolor, dui eget sit viverra justo, malesuada. Viverra pharetra, augue neque felis enim dui id cum. At pellentesque diam nulla ac amet quisque quis. Est consectetur ullamcorper curabitur quis viverra hac molestie. Elit pulvinar congue ut amet adipiscing felis tincidunt. Amet quis varius aliquam hendrerit tempus. Sed sit diam quis "
+    }
+  },
+  "slide":[
+    {
+      "id": 1,
+      "url": "https://imagizer.imageshack.com/img922/5676/3zKi25.jpg",
+      "desk": "Slide",
+      "link": false
+    }, 
+    {
+      "id": 2,
+      "url": "https://imagizer.imageshack.com/img922/5676/3zKi25.jpg",
+      "desk": "Slide",
+      "link": "/collection"
+    }, 
+    {
+      "id": 3,
+      "url": "https://imagizer.imageshack.com/img922/5676/3zKi25.jpg",
+      "desk": "Slide",
+      "link": false
+    }, 
+    {
+      "id": 4,
+      "url": "https://imagizer.imageshack.com/img922/5676/3zKi25.jpg",
+      "desk": "Slide",
+      "link": "/collection"
+    }
+  ],
+  "slide-mob": [
+    {
+      "id": 1,
+      "url": "https://imagizer.imageshack.com/img922/5868/96Xox3.jpg",
+      "desk": "Slide",
+      "link": false
+    }, 
+    {
+      "id": 2,
+      "url": "https://imagizer.imageshack.com/img922/5868/96Xox3.jpg",
+      "desk": "Slide",
+      "link": "/collection"
+    }, 
+    {
+      "id": 3,
+      "url": "https://imagizer.imageshack.com/img922/5868/96Xox3.jpg",
+      "desk": "Slide",
+      "link": false
+    }, 
+    {
+      "id": 4,
+      "url": "https://imagizer.imageshack.com/img922/5868/96Xox3.jpg",
+      "desk": "Slide",
+      "link": "/collection"
+    }
+  ],
+  "about": [
+    [
+      {
+        "id": 1,
+        "desk": "image",
+        "url": "https://imagizer.imageshack.com/img922/1757/hldpYT.jpg"
+      },
+      {
+        "id": 2,
+        "desk": "image",
+        "url": "https://imagizer.imageshack.com/img923/4273/PqFdBa.jpg"
+      },
+      {
+        "id": 3,
+        "desk": "image",
+        "url": "https://imagizer.imageshack.com/img923/9569/KbLrOq.jpg"
+      }
+    ],
+    {
+      "title": "О нас",
+      "body": "У нас Вы найдёте всё, что Вам так нужно. Ассортимент магазина постоянно расширяется и дополняется в зависимости от пожеланий клиентов. Женская одежда из наших коллекций – это комфортная, стильная и качественная одежда не только на каждый день, но и для любых ситуаций по доступным ценам.Натуральные материалы, продуманные силуэты, современный дизайн и возможность легкого сочетания моделей помогут Вам всегда оставаться в центре внимания и чувствовать себя уместно в любой ситуации.Если Вы любите одеваться ярко, модно и оригинально, у нас Вы найдете все необходимое, чтобы всегда быть в центре внимания. У нас большая коллекция для любого торжества и праздника, которая сможет удовлетворить вкус самой взыскательной модницы! А для деловых ситуаций, в которых Вам непременно нужно выглядеть элегантно и стильно, мы предлагаем Вам одежду из коллекции 'деловой стиль и офис'. Мода постоянно диктует нам свои требования и для современной девушки, желающей идти в ногу со временем, важно иметь возможность постоянно пополнять свой гардероб стильной одеждой."
+    }
+  ],
+  "logo": [
+    {
+      "type": "DefLogo",
+      "url": "https://imagizer.imageshack.com/img922/1292/ziTxfB.png"
+    },
+    {
+      "type": "BotLogo",
+      "url": "https://imagizer.imageshack.com/img924/5074/Qbi2Iy.png"
+    },
+    {
+      "type": "MobLogo",
+      "url": "https://imagizer.imageshack.com/img922/4267/QO5MYV.png"
+    }
+  ],
+  "contact": [
+    [
+      {
+        "url": "about-us",
+        "txt": "O нас"
+      },
+      {
+        "url": "news",
+        "txt": "Новости"
+      },
+      {
+        "url": "help",
+        "txt": "Помощь"
+      }
+    ],
+    [
+      {
+        "url": "tel: +996 500 123 456",
+        "txt": "+996 500 123 456"
+      },
+      {
+        "url": "tel: +996 500 123 456",
+        "txt": "+996 500 123 456"
+      },
+      {
+        "url": "malito:mail@gmail.com",
+        "txt": "mail@gmail.com"
+      }
+    ],
+    [
+      {
+        "url": "https://instagram.com/",
+        "txt": "Instagram"
+      },
+      {
+        "url": "https://web.telegram.org/",
+        "txt": "Telegram"
+      },
+      {
+        "url": "https://www.whatsapp.com/",
+        "txt": "Whatsapp"
+      }
+    ]
+  ],
+  "contact-title": ["Компания","Контакты","Мы в социальных сетях:"],
+  "phone-number": [
+    {
+      "txt": "+996 000 00 00 00",
+      "url": "tel: +996 000 00 00 00"
+    }
+  ],
+  "collection": [
+    {
+      "id": 1,
+      "url": "https://imagizer.imageshack.com/img923/2549/cuEAj2.jpg",
+      "title": "Повседневная одежда",
+      "link": ""
+    },
+    {
+      "id": 2,
+      "url": "https://imagizer.imageshack.com/img922/8398/H7FTsP.jpg",
+      "title": "Одежда на пляж",
+      "link": ""
+    },
+    {
+      "id": 3,
+      "url": "https://imagizer.imageshack.com/img924/3937/6sPkgt.jpg",
+      "title": "Юбки",
+      "link": ""
+    },
+    {
+      "id": 4,
+      "url": "https://imagizer.imageshack.com/img922/8173/s97OuD.jpg",
+      "title": "Коллекция лето 2020",
+      "link": ""
+    },
+    {
+      "id": 5,
+      "url": "https://imagizer.imageshack.com/img922/281/QWi46x.jpg",
+      "title": "Коллекция осень 2020",
+      "link": ""
+    },
+    {
+      "id": 6,
+      "url": "https://imagizer.imageshack.com/img923/1673/NN1wle.jpg",
+      "title": "Коллекция зима 2020",
+      "link": ""
+    },
+    {
+      "id": 7,
+      "url": "https://imagizer.imageshack.com/img922/281/QWi46x.jpg",
+      "title": "Коллекция зима 2020",
+      "link": ""
+    },
+    {
+      "id": 8,
+      "url": "https://imagizer.imageshack.com/img924/3937/6sPkgt.jpg",
+      "title": "Коллекция зима 2020",
+      "link": ""
+    },
+    {
+      "id": 9,
+      "url": "https://imagizer.imageshack.com/img924/3937/6sPkgt.jpg",
+      "title": "Юбки",
+      "link": ""
+    },
+    {
+      "id": 10,
+      "url": "https://imagizer.imageshack.com/img922/8173/s97OuD.jpg",
+      "title": "Коллекция лето 2020",
+      "link": ""
+    },
+    {
+      "id": 11,
+      "url": "https://imagizer.imageshack.com/img922/281/QWi46x.jpg",
+      "title": "Коллекция осень 2020",
+      "link": ""
+    },
+    {
+      "id": 12,
+      "url": "https://imagizer.imageshack.com/img923/1673/NN1wle.jpg",
+      "title": "Коллекция весна 2020",
+      "link": ""
+    },
+    {
+      "id": 13,
+      "url": "https://imagizer.imageshack.com/img922/281/QWi46x.jpg",
+      "title": "Коллекция зима 2020",
+      "link": ""
+    },
+    {
+      "id": 14,
+      "url": "https://imagizer.imageshack.com/img924/3937/6sPkgt.jpg",
+      "title": "Коллекция осень 2020",
+      "link": ""
+    },
+    {
+      "id": 15,
+      "url": "https://imagizer.imageshack.com/img923/2549/cuEAj2.jpg",
+      "title": "Юбки",
+      "link": ""
+    },
+    {
+      "id": 16,
+      "url": "https://imagizer.imageshack.com/img922/8173/s97OuD.jpg",
+      "title": "Коллекция лето 2020",
+      "link": ""
+    }
+  ],
+  "adventage": [
+    {
+      "id": 1,
+      "icon": "https://firebasestorage.googleapis.com/v0/b/zeon-store-8ad28.appspot.com/o/money.svg?alt=media&token=9719170d-b200-444b-8f57-26df4e4efe3c",
+      "title": "Удобные способы оплаты",
+      "body":"Мы предлагаем возможность безналичной оплаты"
+    },
+    {
+      "id": 2,
+      "icon": "https://firebasestorage.googleapis.com/v0/b/zeon-store-8ad28.appspot.com/o/truck.svg?alt=media&token=71ad4381-e9ca-46b1-9056-f033453216f9",
+      "title": "Cвоевремнная доставка",
+      "body":"100% гарантия возврата товара - 14 дней на возврат, без скандалов и истерик."
+    },
+    {
+      "id": 3,
+      "icon": "https://firebasestorage.googleapis.com/v0/b/zeon-store-8ad28.appspot.com/o/supp.svg?alt=media&token=2a07c46e-371b-4d32-aff0-e26c2a0fac2f",
+      "title": "Профессиональная консультация",
+      "body":"Мы проконсультируем и индивидуально подойдем к Вашему заказу"
+    },
+    {
+      "id": 4,
+      "icon": "https://firebasestorage.googleapis.com/v0/b/zeon-store-8ad28.appspot.com/o/shop.svg?alt=media&token=7f5afcfa-6599-42ba-9e49-a83c5929d453",
+      "title": "Акции и бонусы для покупателей",
+      "body":"Промокоды со скидками для постоянных клиентов, акции на новые позиции"
+    }
+  ],
+  "icons": [
+    {
+      "id": 1,
+      "name": "busket",
+      "url": "https://firebasestorage.googleapis.com/v0/b/zeon-store-8ad28.appspot.com/o/basket.svg?alt=media&token=8e177536-2d37-4a0b-8a70-6d5c3fd0c9b2"
+    },
+    {
+      "id": 2,
+      "name": "chat",
+      "url": "https://firebasestorage.googleapis.com/v0/b/zeon-store-8ad28.appspot.com/o/chat.svg?alt=media&token=9b7c2024-c392-47dd-b94b-f300e985cca4"
+    },
+    {
+      "id": 3,
+      "name": "done",
+      "url": "https://firebasestorage.googleapis.com/v0/b/zeon-store-8ad28.appspot.com/o/done.svg?alt=media&token=5b36df3a-5d5e-4aef-a4d6-03e8915332cf"
+    },
+    {
+      "id": 4,
+      "name": "heart",
+      "url": "https://firebasestorage.googleapis.com/v0/b/zeon-store-8ad28.appspot.com/o/heart.svg?alt=media&token=7adfefac-68e8-4f76-89cb-e1676cd972e3"
+    },
+    {
+      "id": 5,
+      "name": "insta",
+      "url": "https://firebasestorage.googleapis.com/v0/b/zeon-store-8ad28.appspot.com/o/insta.svg?alt=media&token=fa57f133-80d8-4e5b-9946-9a86ef9be188"
+    },
+    {
+      "id": 6,
+      "name": "mail",
+      "url": "https://firebasestorage.googleapis.com/v0/b/zeon-store-8ad28.appspot.com/o/mail.svg?alt=media&token=631f8047-1076-4b92-86ca-b95dfc4b452a"
+    },
+    {
+      "id": 7,
+      "name": "phone",
+      "url": "https://firebasestorage.googleapis.com/v0/b/zeon-store-8ad28.appspot.com/o/phone.svg?alt=media&token=5456aa62-3c81-4f21-8b43-7acb0cd4428a"
+    },
+    {
+      "id": 8,
+      "name": "search",
+      "url": "https://firebasestorage.googleapis.com/v0/b/zeon-store-8ad28.appspot.com/o/search.svg?alt=media&token=5743366f-7036-45dd-91e1-42c99d7e4560"
+    },
+    {
+      "id": 9,
+      "name": "telega",
+      "url": "https://firebasestorage.googleapis.com/v0/b/zeon-store-8ad28.appspot.com/o/telega.svg?alt=media&token=621cce6e-6df2-47f7-99eb-b271bf3507d6"
+    },
+    {
+      "id": 10,
+      "name": "telegram",
+      "url": "https://firebasestorage.googleapis.com/v0/b/zeon-store-8ad28.appspot.com/o/telegram.svg?alt=media&token=df7df144-30b3-4462-82f0-7d2aa2e629b5"
+    },
+    {
+      "id": 11,
+      "name": "whats",
+      "url": "https://firebasestorage.googleapis.com/v0/b/zeon-store-8ad28.appspot.com/o/whats.svg?alt=media&token=afe07dd2-75bc-4bcc-a988-fa2ab83cb112"
+    },
+    {
+      "id": 12,
+      "name": "whatsapp",
+      "url": "https://firebasestorage.googleapis.com/v0/b/zeon-store-8ad28.appspot.com/o/whatsapp.svg?alt=media&token=be6a5bff-b2db-47eb-a08e-16b63dc0669b"
+    },
+    {
+      "id": 13,
+      "name": "check",
+      "url": "https://firebasestorage.googleapis.com/v0/b/zeon-store-8ad28.appspot.com/o/chek.svg?alt=media&token=a6b780a7-af0f-4c20-ac39-f25b69f5cf1e"
+    },
+    {
+      "id": 14,
+      "name": "flag",
+      "url": "https://firebasestorage.googleapis.com/v0/b/zeon-store-8ad28.appspot.com/o/flag.svg?alt=media&token=9e94534b-cf50-4208-9a53-7f245a7278c5"
+    }
+  ]
+}
