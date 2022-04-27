@@ -6,32 +6,34 @@ import ProductDesc from "./ProductDesc/ProductDesc"
 import ProductSlider from './ProductSlider/ProductSlider'
 import { addToFavorite, removeToFavorite } from "../../store/favorite"
 import { checkArr } from "../../utils/allFunc"
+import useToggleFavorite from "../../hooks/useToggleFavorite"
 
 const Product = ({ info }) => {
 
   const [visi, setVisi] = useState(0);
-  const favorites = useSelector(state => state.favorite.favorite)
-  const [product, setProduct] = useState(info)
-  const dispatch = useDispatch()
+  // const favorites = useSelector(state => state.favorite.favorite)
+  // const [product, setProduct] = useState(info)
+  // const dispatch = useDispatch()
+  const { favorites, toggleFavorite } = useToggleFavorite(info, setVisi)
 
-  const toggleFavorite = () => {
-    if( !product.favorite ){
-      if(!checkArr(favorites, info)){
-        dispatch(addToFavorite( info ));
-        setProduct({...product, favorite: true})
-        setVisi(1)
-      }else {
-        dispatch(removeToFavorite( info ));
-        setVisi(0)
-        setProduct({...product, favorite: false})
-      }
-    } else {
-      dispatch(removeToFavorite( info ));
-      setVisi(0)
-      setProduct({...product, favorite: false})
-    }
-    console.log(product);
-  }
+  // const toggleFavorite = () => {
+  //   if( !product.favorite ){
+  //     if(!checkArr(favorites, info)){
+  //       dispatch(addToFavorite( info ));
+  //       setProduct({...product, favorite: true})
+  //       setVisi(1)
+  //     }else {
+  //       dispatch(removeToFavorite( info ));
+  //       setVisi(0)
+  //       setProduct({...product, favorite: false})
+  //     }
+  //   } else {
+  //     dispatch(removeToFavorite( info ));
+  //     setVisi(0)
+  //     setProduct({...product, favorite: false})
+  //   }
+  //   console.log(product);
+  // }
   
   const asyncProductHeart = () => {
     if(checkArr(favorites, info)) setVisi(1)

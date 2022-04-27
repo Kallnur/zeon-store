@@ -26,7 +26,9 @@ const ProductPageInfo = ({info}) => {
         </ul>
         <div className={classCss.ProductBtns}>
             <button><Busket css={classCss.ProductPageBusket}/> Добавить в корзину</button>
-            <button><Heart css={classCss.ProductPageHeart}/></button>
+            <button>
+                <Heart css={classCss.ProductPageHeart}/>
+            </button>
         </div>
     </>
   )
