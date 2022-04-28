@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { Right } from '../Icons/Icons'
+import { Left } from '../Icons/Icons'
 
 const Collection = ({info}) => {
   return (
@@ -13,7 +13,7 @@ const Collection = ({info}) => {
                 </div>
                 <div className='collection-desc'>
                     <span>Смотреть все</span>
-                    <Right/>
+                    <Left/>
                 </div>
             </div>
         </Link>

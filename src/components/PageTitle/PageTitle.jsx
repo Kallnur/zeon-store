@@ -7,15 +7,20 @@ const PageTitle = ({title, subtitle, titleDesc, subtitleDesc}) => {
         <h1 className={classCss.Title}>
             {title} {titleDesc}
         </h1>
-        <div className={classCss.SubtitleBlock}>
-            <span className={classCss.Subtitle}>
-                {subtitle}
-            </span>
-            <span className={classCss.Subtitle}>
-                {subtitleDesc}
-            </span>
-        </div>
-
+        {
+            subtitle
+            ?
+            <div className={classCss.SubtitleBlock}>
+                <span className={classCss.Subtitle}>
+                    {subtitle}
+                </span>
+                <span className={classCss.Subtitle}>
+                    {subtitleDesc}
+                </span>
+            </div>
+            :
+            null
+        }
     </div>
   )
 }

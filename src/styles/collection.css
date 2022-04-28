@@ -39,7 +39,7 @@
 .collection:hover .collection-desc{background: #fff;}
 .collection:hover .collection-desc span{color: #1D1D1B;}
 .collection:hover path{fill: #1D1D1B;}
-.collection:hover svg{transform: translateX(8px);}
+.collection:hover svg{transform: translateX(8px) rotate(180deg);}
 
 .collection-img strong{
     position: absolute;
@@ -74,6 +74,7 @@
 .collection-desc > svg{
     width: 20px;
     height: 25px;
+    transform: rotate(180deg);
     transition: .3s;
 }
 .collection-desc > svg path{
@@ -83,16 +84,10 @@
 .collection-not{
     position: relative;
     width: 100vw;
-    animation: load 2s infinite linear;
 }
 
 @media screen and (max-width: 425px) {
     .collection-group{flex-direction: column;}
     .collection{width: 100%;}
     .collection-desc{height: 50px;}
-}
-
-@keyframes load{
-    from{opacity: 1; transform: translateX(0);}
-    to{opacity: 0; transform: translateX(100%);}
 }

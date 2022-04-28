@@ -1,8 +1,29 @@
-import React from 'react'
-import { Busket, Heart } from '../../../components/Icons/Icons'
+import React, {useEffect, useState} from 'react'
+import { useDispatch, useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
+import { Busket, Heart, WhiteHeart } from '../../../components/Icons/Icons'
+import useToggleFavorite from '../../../hooks/useToggleFavorite';
+import { addToBusket, removeToBasket } from '../../../store/basket';
+import { asyncProductHeart, checkArr } from '../../../utils/allFunc';
 import classCss from '../ProductPage.module.css'
 
 const ProductPageInfo = ({info}) => {
+
+    const [visi, setVisi] = useState(0);
+    const { favorites, toggleFavorite } = useToggleFavorite({info, setVisi})
+    const dispatch = useDispatch()
+
+    useEffect(() => { asyncProductHeart(favorites, info, setVisi) },[])
+    useEffect(() => { asyncProductHeart(favorites, info, setVisi) },[info, favorites])
+
+    const basket = useSelector(state => state.basket.basket)
+
+    const toggleBasket = () => {
+        if(!checkArr(basket, info)) dispatch(addToBusket(info))
+            else dispatch(removeToBasket(info)) 
+        
+        console.log(basket)
+    }
 
   return (
     <>
@@ -25,9 +46,19 @@ const ProductPageInfo = ({info}) => {
             </li>
         </ul>
         <div className={classCss.ProductBtns}>
-            <button><Busket css={classCss.ProductPageBusket}/> Добавить в корзину</button>
-            <button>
+            {!checkArr(basket, info)
+                ?
+                <button onClick={toggleBasket}>
+                    <Busket css={classCss.ProductPageBusket}/> Добавить в корзину
+                </button>
+                :
+                <Link to={'/basket'}>Перейти в корзину</Link>
+            }
+            <button
+                onClick={toggleFavorite}
+            >
                 <Heart css={classCss.ProductPageHeart}/>
+                <WhiteHeart css={classCss.ProductActiveHeart} visi={visi} />
             </button>
         </div>
     </>

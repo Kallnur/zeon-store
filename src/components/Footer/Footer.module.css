@@ -37,11 +37,16 @@
     justify-content: space-between;
 }
 
-.FooterList li{padding: 0 5px;}
+.FooterList li{
+    padding: 0 5px;
+}
 
 .FooterList li a{
     color: #fff;
     font-weight: 400;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
 }
 
 .FooterList li:nth-child(1){margin-bottom: .5rem;}

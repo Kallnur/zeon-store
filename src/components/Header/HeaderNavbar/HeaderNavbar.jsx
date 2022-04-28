@@ -26,7 +26,6 @@ export const HeaderTel = () => {
     const getPhoneNumber = async () => {
         const response = await GetServ.getPhoneNumber();
         setPhoneNumber(response.data)
-        console.log(phoneNumber)
     }
 
     useEffect(() => {

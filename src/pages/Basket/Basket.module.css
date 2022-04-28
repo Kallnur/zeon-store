@@ -1,0 +1,21 @@
+.Busket{
+    padding: 1.5rem 0;
+}
+.BusketBody{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 2rem;
+    min-width: 0;
+}
+.BusketProductGroup{
+    position: relative;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.BusketBody div{min-width: 0;}

@@ -1,0 +1,18 @@
+.ResSearch{padding: .5rem 0 3rem 0;}
+
+.ResSearchBody > .productGroup{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+.ResSearchBody > .productGroup > div{
+    width: 100%;
+}
+
+@media screen and (max-width: 425px) {
+    .ResSearchBody > .productGroup{
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 10px;
+    }
+    .ResSearchBody h1 {font-size: 1.3rem; margin-bottom: 1.5rem;}
+}

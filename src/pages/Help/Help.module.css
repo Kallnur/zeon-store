@@ -1,0 +1,75 @@
+.HelpBody{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    align-items: start;
+    padding: 1rem 0 3rem 0;
+    position: relative;
+    width: 100%;
+}
+.HelpBody h1{margin-top: 0;}
+
+.HelpGroup{
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+}
+
+.HelpBlock{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    justify-content: space-between;
+    position: relative;
+    background: #fff;
+    height: 60px;
+    overflow: hidden;
+    transition: .3s;
+    cursor: pointer;
+}
+.HelpTitle{
+    position: relative;
+    font-size: 1.2rem;
+    color: #393939;
+    font-weight: 400;
+    margin: 0 0 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 1rem;
+}
+.HelpAnswer{
+    color: #354455;
+    font-size: .95rem;
+    line-height: 28px;
+    letter-spacing: .2px;
+}
+
+.HelpTitle > svg{
+    width: 16px;
+    height: 25px;
+    transform: rotate(-90deg);
+}
+
+.HelpTitleSvgTop > svg{
+    transform: rotate(90deg);
+}
+.HelpBlockActive{
+    height: 220px;
+}
+
+@media screen and (max-width: 425px) {
+    .HelpBody{ 
+        flex-direction: column; 
+    }
+    .HelpGroup{ width: 100%; }
+    .HelpGroupBlock{width: 100%;}
+    .HelpImg{
+        position: relative;
+        width: 100%;
+    }
+    .HelpImg img{width: 100%;}
+    .HelpAnswer{font-size: .9rem;}
+    .HelpTitle{font-size: 1rem;}
+    .HelpBlockActive{ height: 420px; }
+}

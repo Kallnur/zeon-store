@@ -42,6 +42,6 @@
     height: 24px;
     transition: .3s;
 }
-
+.Pagination span:last-child svg{transform: rotate(180deg) translateX(50%);}
 .Pagination span:nth-child(1):hover svg{transform: translateX(-8px);}
-.Pagination span:last-child:hover svg{transform: translateX(8px);}
+.Pagination span:last-child:hover svg{transform: translateX(8px) rotate(180deg);} 

@@ -1,6 +1,6 @@
 import React from 'react'
 import { totalPagBullet } from '../../utils/allFunc'
-import { Left, Right } from '../Icons/Icons';
+import { Left } from '../Icons/Icons';
 import classCss from './Pagination.module.css'
 
 const Pagination = ({totalBullet, page, toggle}) => {
@@ -32,8 +32,8 @@ const Pagination = ({totalBullet, page, toggle}) => {
                 </span>
             )
         }
-        <span onClick={() => next()} className={classCss.PaginationBtn}>
-            <Right/>
+        <span onClick={() => next()} className={[classCss.PaginationBtn, classCss.PaginationBtn2].join(' ')}>
+            <Left/>
         </span>
     </div>
   )

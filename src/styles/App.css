@@ -35,6 +35,7 @@ ul, ol{
   position: relative;
   width: 100%;
   /* overflow-x: hidden; */
+  z-index: 100;
 }
 
 @import url("./product.css");

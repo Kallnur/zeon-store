@@ -56,3 +56,8 @@ export const addKeyInObj = (arr, key) => {
         obj.favorite = key;
     })
 }
+
+export const asyncProductHeart = (arr, obj, setState) => {
+  if(checkArr(arr, obj)) setState(1)
+    else setState(0)
+}

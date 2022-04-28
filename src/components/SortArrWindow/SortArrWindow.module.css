@@ -1,0 +1,38 @@
+.List{
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    min-height: initial;
+    max-height: 250px;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border-radius: 3px;
+    border: inherit;
+    display: none;
+    z-index: 1000;
+    overflow-y: scroll;
+}
+.ListActive{display: flex;}
+.Item{
+    position: relative;
+    width: 100%;
+    padding: 0 10px;
+    height: 60px;
+    cursor: pointer;
+    border-bottom: 1px solid #EEEEEE;
+}
+.Item:hover{
+    background: #eee;
+}
+
+.Item a{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+}

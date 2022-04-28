@@ -2,7 +2,9 @@
   "product": [
     {
       "id": 1,
-      "url": ["https://imagizer.imageshack.com/img923/9082/tfCoZe.jpg"],
+      "url": [
+        "https://imagizer.imageshack.com/img923/9082/tfCoZe.jpg"
+      ],
       "collection": "Вечернее платье",
       "price": 1365,
       "currency": "р",
@@ -117,7 +119,9 @@
     },
     {
       "id": 3,
-      "url": ["https://imagizer.imageshack.com/img922/8317/Nyfmt3.jpg"],
+      "url": [
+        "https://imagizer.imageshack.com/img922/8317/Nyfmt3.jpg"
+      ],
       "collection": "Платья",
       "price": 1365,
       "currency": "р",
@@ -172,7 +176,9 @@
     },
     {
       "id": 4,
-      "url": ["https://imagizer.imageshack.com/img922/5935/aVP9P9.jpg"],
+      "url": [
+        "https://imagizer.imageshack.com/img922/5935/aVP9P9.jpg"
+      ],
       "collection": "Вечернее платье",
       "price": 1600,
       "currency": "р",
@@ -227,7 +233,9 @@
     },
     {
       "id": 5,
-      "url": ["https://imagizer.imageshack.com/img924/2001/uA3EB7.jpg"],
+      "url": [
+        "https://imagizer.imageshack.com/img924/2001/uA3EB7.jpg"
+      ],
       "collection": "Платья",
       "price": 1365,
       "currency": "р",
@@ -282,7 +290,9 @@
     },
     {
       "id": 6,
-      "url": ["https://imagizer.imageshack.com/img924/3892/CfhtW9.jpg"],
+      "url": [
+        "https://imagizer.imageshack.com/img924/3892/CfhtW9.jpg"
+      ],
       "collection": "Вечернее платье",
       "price": 2000,
       "currency": "р",
@@ -396,7 +406,9 @@
     },
     {
       "id": 8,
-      "url": ["https://imagizer.imageshack.com/img922/1803/0TJHHB.jpg"],
+      "url": [
+        "https://imagizer.imageshack.com/img922/1803/0TJHHB.jpg"
+      ],
       "collection": "Вечернее платье",
       "price": 1365,
       "currency": "р",
@@ -451,7 +463,9 @@
     },
     {
       "id": 9,
-      "url": ["https://imagizer.imageshack.com/img924/963/lLb97x.jpg"],
+      "url": [
+        "https://imagizer.imageshack.com/img924/963/lLb97x.jpg"
+      ],
       "collection": "Юбки",
       "price": 1750,
       "currency": "р",
@@ -506,7 +520,9 @@
     },
     {
       "id": 10,
-      "url": ["https://imagizer.imageshack.com/img922/7373/iuEy5i.jpg"],
+      "url": [
+        "https://imagizer.imageshack.com/img922/7373/iuEy5i.jpg"
+      ],
       "collection": "Вечернее платье",
       "price": 1400,
       "currency": "р",
@@ -561,7 +577,9 @@
     },
     {
       "id": 11,
-      "url": ["https://imagizer.imageshack.com/img923/3513/ZdyFS2.jpg"],
+      "url": [
+        "https://imagizer.imageshack.com/img923/3513/ZdyFS2.jpg"
+      ],
       "collection": "Юбки",
       "price": 1365,
       "currency": "р",
@@ -616,7 +634,9 @@
     },
     {
       "id": 12,
-      "url": ["https://imagizer.imageshack.com/img923/9454/hfNtHk.jpg"],
+      "url": [
+        "https://imagizer.imageshack.com/img923/9454/hfNtHk.jpg"
+      ],
       "collection": "Юбки",
       "price": 1365,
       "currency": "р",
@@ -671,7 +691,9 @@
     },
     {
       "id": 13,
-      "url": ["https://imagizer.imageshack.com/img923/9454/hfNtHk.jpg"],
+      "url": [
+        "https://imagizer.imageshack.com/img923/9454/hfNtHk.jpg"
+      ],
       "collection": "Вечернее платье",
       "price": 1365,
       "currency": "р",
@@ -785,7 +807,9 @@
     },
     {
       "id": 15,
-      "url": ["https://imagizer.imageshack.com/img922/8317/Nyfmt3.jpg"],
+      "url": [
+        "https://imagizer.imageshack.com/img922/8317/Nyfmt3.jpg"
+      ],
       "collection": "Юбки",
       "price": 1750,
       "currency": "р",
@@ -840,7 +864,9 @@
     },
     {
       "id": 16,
-      "url": ["https://imagizer.imageshack.com/img922/7373/iuEy5i.jpg"],
+      "url": [
+        "https://imagizer.imageshack.com/img922/7373/iuEy5i.jpg"
+      ],
       "collection": "Вечернее платье",
       "price": 1400,
       "currency": "р",
@@ -954,7 +980,9 @@
     },
     {
       "id": 18,
-      "url": ["https://imagizer.imageshack.com/img923/9454/hfNtHk.jpg"],
+      "url": [
+        "https://imagizer.imageshack.com/img923/9454/hfNtHk.jpg"
+      ],
       "collection": "Вечернее платье",
       "price": 1365,
       "currency": "р",
@@ -1009,7 +1037,9 @@
     },
     {
       "id": 19,
-      "url": ["https://imagizer.imageshack.com/img922/7373/iuEy5i.jpg"],
+      "url": [
+        "https://imagizer.imageshack.com/img922/7373/iuEy5i.jpg"
+      ],
       "collection": "Джинсы",
       "price": 2100,
       "currency": "р",
@@ -1064,7 +1094,9 @@
     },
     {
       "id": 20,
-      "url": ["https://imagizer.imageshack.com/img922/7373/iuEy5i.jpg"],
+      "url": [
+        "https://imagizer.imageshack.com/img922/7373/iuEy5i.jpg"
+      ],
       "collection": "Вечернее платье",
       "price": 1400,
       "currency": "р",
@@ -1178,7 +1210,9 @@
     },
     {
       "id": 22,
-      "url": ["https://imagizer.imageshack.com/img922/7373/iuEy5i.jpg"],
+      "url": [
+        "https://imagizer.imageshack.com/img922/7373/iuEy5i.jpg"
+      ],
       "collection": "Вечернее платье",
       "price": 1365,
       "currency": "р",
@@ -1233,7 +1267,9 @@
     },
     {
       "id": 23,
-      "url": ["https://imagizer.imageshack.com/img922/7373/iuEy5i.jpg"],
+      "url": [
+        "https://imagizer.imageshack.com/img922/7373/iuEy5i.jpg"
+      ],
       "collection": "Вечернее платье",
       "price": 2100,
       "currency": "р",
@@ -1288,7 +1324,9 @@
     },
     {
       "id": 24,
-      "url": ["https://imagizer.imageshack.com/img922/7373/iuEy5i.jpg"],
+      "url": [
+        "https://imagizer.imageshack.com/img922/7373/iuEy5i.jpg"
+      ],
       "collection": "Вечернее платье",
       "price": 1400,
       "currency": "р",
@@ -1349,25 +1387,25 @@
       "parapg2": "Sit ullamcorper at gravida quis feugiat. Laoreet leo dolor, dui eget sit viverra justo, malesuada. Viverra pharetra, augue neque  Sit ullamcorper at gravida quis feugiat. Laoreet leo dolor, dui eget sit viverra justo, malesuada. Viverra pharetra, augue neque felis enim dui id cum. At pellentesque diam nulla ac amet quisque quis. Est consectetur ullamcorper curabitur quis viverra hac molestie. Elit pulvinar congue ut amet adipiscing felis tincidunt. Amet quis varius aliquam hendrerit tempus. Sed sit diam quis "
     }
   },
-  "slide":[
+  "slide": [
     {
       "id": 1,
       "url": "https://imagizer.imageshack.com/img922/5676/3zKi25.jpg",
       "desk": "Slide",
-      "link": false
-    }, 
+      "link": "/favorites"
+    },
     {
       "id": 2,
       "url": "https://imagizer.imageshack.com/img922/5676/3zKi25.jpg",
       "desk": "Slide",
       "link": "/collection"
-    }, 
+    },
     {
       "id": 3,
       "url": "https://imagizer.imageshack.com/img922/5676/3zKi25.jpg",
       "desk": "Slide",
-      "link": false
-    }, 
+      "link": "/busket"
+    },
     {
       "id": 4,
       "url": "https://imagizer.imageshack.com/img922/5676/3zKi25.jpg",
@@ -1381,19 +1419,19 @@
       "url": "https://imagizer.imageshack.com/img922/5868/96Xox3.jpg",
       "desk": "Slide",
       "link": false
-    }, 
+    },
     {
       "id": 2,
       "url": "https://imagizer.imageshack.com/img922/5868/96Xox3.jpg",
       "desk": "Slide",
       "link": "/collection"
-    }, 
+    },
     {
       "id": 3,
       "url": "https://imagizer.imageshack.com/img922/5868/96Xox3.jpg",
       "desk": "Slide",
       "link": false
-    }, 
+    },
     {
       "id": 4,
       "url": "https://imagizer.imageshack.com/img922/5868/96Xox3.jpg",
@@ -1441,48 +1479,71 @@
   "contact": [
     [
       {
+        "icon": false,
         "url": "about-us",
         "txt": "O нас"
       },
       {
+        "icon": false,
         "url": "news",
         "txt": "Новости"
       },
       {
+        "icon": false,
         "url": "help",
         "txt": "Помощь"
+      },
+      {
+        "icon": false,
+        "url": "offer",
+        "txt": "Публичная оферта"
       }
     ],
     [
       {
+        "icon": "https://firebasestorage.googleapis.com/v0/b/zeon-store-8ad28.appspot.com/o/contactTel.svg?alt=media&token=87a1001c-0c91-41fa-a90e-91aa4feef8aa",
         "url": "tel: +996 500 123 456",
         "txt": "+996 500 123 456"
       },
       {
+        "icon": "https://firebasestorage.googleapis.com/v0/b/zeon-store-8ad28.appspot.com/o/contactTel.svg?alt=media&token=87a1001c-0c91-41fa-a90e-91aa4feef8aa",
         "url": "tel: +996 500 123 456",
         "txt": "+996 500 123 456"
       },
       {
+        "icon": "https://firebasestorage.googleapis.com/v0/b/zeon-store-8ad28.appspot.com/o/contactTel.svg?alt=media&token=87a1001c-0c91-41fa-a90e-91aa4feef8aa",
+        "url": "tel: +996 500 123 456",
+        "txt": "+996 500 123 456"
+      },
+      {
+        "icon": "https://firebasestorage.googleapis.com/v0/b/zeon-store-8ad28.appspot.com/o/mail.svg?alt=media&token=631f8047-1076-4b92-86ca-b95dfc4b452a",
         "url": "malito:mail@gmail.com",
         "txt": "mail@gmail.com"
       }
     ],
     [
       {
+        "icon": "https://firebasestorage.googleapis.com/v0/b/zeon-store-8ad28.appspot.com/o/insta.svg?alt=media&token=fa57f133-80d8-4e5b-9946-9a86ef9be188",
         "url": "https://instagram.com/",
         "txt": "Instagram"
       },
       {
+        "icon": "https://firebasestorage.googleapis.com/v0/b/zeon-store-8ad28.appspot.com/o/telega.svg?alt=media&token=621cce6e-6df2-47f7-99eb-b271bf3507d6",
         "url": "https://web.telegram.org/",
         "txt": "Telegram"
       },
       {
+        "icon": "https://firebasestorage.googleapis.com/v0/b/zeon-store-8ad28.appspot.com/o/whats.svg?alt=media&token=afe07dd2-75bc-4bcc-a988-fa2ab83cb112",
         "url": "https://www.whatsapp.com/",
         "txt": "Whatsapp"
       }
     ]
   ],
-  "contact-title": ["Компания","Контакты","Мы в социальных сетях:"],
+  "contact-title": [
+    "Компания",
+    "Контакты",
+    "Мы в социальных сетях:"
+  ],
   "phone-number": [
     {
       "txt": "+996 000 00 00 00",
@@ -1592,87 +1653,32 @@
       "id": 1,
       "icon": "https://firebasestorage.googleapis.com/v0/b/zeon-store-8ad28.appspot.com/o/money.svg?alt=media&token=9719170d-b200-444b-8f57-26df4e4efe3c",
       "title": "Удобные способы оплаты",
-      "body":"Мы предлагаем возможность безналичной оплаты"
+      "body": "Мы предлагаем возможность безналичной оплаты"
     },
     {
       "id": 2,
       "icon": "https://firebasestorage.googleapis.com/v0/b/zeon-store-8ad28.appspot.com/o/truck.svg?alt=media&token=71ad4381-e9ca-46b1-9056-f033453216f9",
       "title": "Cвоевремнная доставка",
-      "body":"100% гарантия возврата товара - 14 дней на возврат, без скандалов и истерик."
+      "body": "100% гарантия возврата товара - 14 дней на возврат, без скандалов и истерик."
     },
     {
       "id": 3,
       "icon": "https://firebasestorage.googleapis.com/v0/b/zeon-store-8ad28.appspot.com/o/supp.svg?alt=media&token=2a07c46e-371b-4d32-aff0-e26c2a0fac2f",
       "title": "Профессиональная консультация",
-      "body":"Мы проконсультируем и индивидуально подойдем к Вашему заказу"
+      "body": "Мы проконсультируем и индивидуально подойдем к Вашему заказу"
     },
     {
       "id": 4,
       "icon": "https://firebasestorage.googleapis.com/v0/b/zeon-store-8ad28.appspot.com/o/shop.svg?alt=media&token=7f5afcfa-6599-42ba-9e49-a83c5929d453",
       "title": "Акции и бонусы для покупателей",
-      "body":"Промокоды со скидками для постоянных клиентов, акции на новые позиции"
+      "body": "Промокоды со скидками для постоянных клиентов, акции на новые позиции"
     }
   ],
   "icons": [
     {
-      "id": 1,
-      "name": "busket",
-      "url": "https://firebasestorage.googleapis.com/v0/b/zeon-store-8ad28.appspot.com/o/basket.svg?alt=media&token=8e177536-2d37-4a0b-8a70-6d5c3fd0c9b2"
-    },
-    {
-      "id": 2,
-      "name": "chat",
-      "url": "https://firebasestorage.googleapis.com/v0/b/zeon-store-8ad28.appspot.com/o/chat.svg?alt=media&token=9b7c2024-c392-47dd-b94b-f300e985cca4"
-    },
-    {
       "id": 3,
       "name": "done",
       "url": "https://firebasestorage.googleapis.com/v0/b/zeon-store-8ad28.appspot.com/o/done.svg?alt=media&token=5b36df3a-5d5e-4aef-a4d6-03e8915332cf"
-    },
-    {
-      "id": 4,
-      "name": "heart",
-      "url": "https://firebasestorage.googleapis.com/v0/b/zeon-store-8ad28.appspot.com/o/heart.svg?alt=media&token=7adfefac-68e8-4f76-89cb-e1676cd972e3"
-    },
-    {
-      "id": 5,
-      "name": "insta",
-      "url": "https://firebasestorage.googleapis.com/v0/b/zeon-store-8ad28.appspot.com/o/insta.svg?alt=media&token=fa57f133-80d8-4e5b-9946-9a86ef9be188"
-    },
-    {
-      "id": 6,
-      "name": "mail",
-      "url": "https://firebasestorage.googleapis.com/v0/b/zeon-store-8ad28.appspot.com/o/mail.svg?alt=media&token=631f8047-1076-4b92-86ca-b95dfc4b452a"
-    },
-    {
-      "id": 7,
-      "name": "phone",
-      "url": "https://firebasestorage.googleapis.com/v0/b/zeon-store-8ad28.appspot.com/o/phone.svg?alt=media&token=5456aa62-3c81-4f21-8b43-7acb0cd4428a"
-    },
-    {
-      "id": 8,
-      "name": "search",
-      "url": "https://firebasestorage.googleapis.com/v0/b/zeon-store-8ad28.appspot.com/o/search.svg?alt=media&token=5743366f-7036-45dd-91e1-42c99d7e4560"
-    },
-    {
-      "id": 9,
-      "name": "telega",
-      "url": "https://firebasestorage.googleapis.com/v0/b/zeon-store-8ad28.appspot.com/o/telega.svg?alt=media&token=621cce6e-6df2-47f7-99eb-b271bf3507d6"
-    },
-    {
-      "id": 10,
-      "name": "telegram",
-      "url": "https://firebasestorage.googleapis.com/v0/b/zeon-store-8ad28.appspot.com/o/telegram.svg?alt=media&token=df7df144-30b3-4462-82f0-7d2aa2e629b5"
-    },
-    {
-      "id": 11,
-      "name": "whats",
-      "url": "https://firebasestorage.googleapis.com/v0/b/zeon-store-8ad28.appspot.com/o/whats.svg?alt=media&token=afe07dd2-75bc-4bcc-a988-fa2ab83cb112"
-    },
-    {
-      "id": 12,
-      "name": "whatsapp",
-      "url": "https://firebasestorage.googleapis.com/v0/b/zeon-store-8ad28.appspot.com/o/whatsapp.svg?alt=media&token=be6a5bff-b2db-47eb-a08e-16b63dc0669b"
     },
     {
       "id": 13,
@@ -1683,6 +1689,112 @@
       "id": 14,
       "name": "flag",
       "url": "https://firebasestorage.googleapis.com/v0/b/zeon-store-8ad28.appspot.com/o/flag.svg?alt=media&token=9e94534b-cf50-4208-9a53-7f245a7278c5"
+    }
+  ],
+  "help": [
+    {
+      "title": "Как я могу заказать одежду?",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet laoreet a, neque, gravida urna libero iaculis lacus. Pellentesque pellentesque massa ornare sit pellentesque elit nulla. Id est tellus maecenas ornare velit. Ut cras ut rhoncus fermentum pharetra a sit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet laoreet a, neque, gravida urna libero iaculis lacus. Pellentesque pellentesque massa ornare sit pellentesque elit nulla. Id est tellus maecenas ornare velit. ",
+      "id": "1"
+    },
+    {
+      "title": "Как осуществляется доставка?",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet laoreet a, neque, gravida urna libero iaculis lacus. Pellentesque pellentesque massa ornare sit pellentesque elit nulla. Id est tellus maecenas ornare velit. Ut cras ut rhoncus fermentum pharetra a sit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet laoreet a, neque, gravida urna libero iaculis lacus. Pellentesque pellentesque massa ornare sit pellentesque elit nulla. Id est tellus maecenas ornare velit. ",
+      "id": "2"
+    },
+    {
+      "title": "Где производятся вещи?",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet laoreet a, neque, gravida urna libero iaculis lacus. Pellentesque pellentesque massa ornare sit pellentesque elit nulla. Id est tellus maecenas ornare velit. Ut cras ut rhoncus fermentum pharetra a sit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet laoreet a, neque, gravida urna libero iaculis lacus. Pellentesque pellentesque massa ornare sit pellentesque elit nulla. Id est tellus maecenas ornare velit. ",
+      "id": "3"
+    },
+    {
+      "title": "Как будет упакован заказ?",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet laoreet a, neque, gravida urna libero iaculis lacus. Pellentesque pellentesque massa ornare sit pellentesque elit nulla. Id est tellus maecenas ornare velit. Ut cras ut rhoncus fermentum pharetra a sit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet laoreet a, neque, gravida urna libero iaculis lacus. Pellentesque pellentesque massa ornare sit pellentesque elit nulla. Id est tellus maecenas ornare velit. ",
+      "id": "4"
+    },
+    {
+      "title": "Lorem ipsum dolor sit amet?",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet laoreet a, neque, gravida urna libero iaculis lacus. Pellentesque pellentesque massa ornare sit pellentesque elit nulla. Id est tellus maecenas ornare velit. Ut cras ut rhoncus fermentum pharetra a sit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet laoreet a, neque, gravida urna libero iaculis lacus. Pellentesque pellentesque massa ornare sit pellentesque elit nulla. Id est tellus maecenas ornare velit. ",
+      "id": "5"
+    },
+    {
+      "title": "Есть ли возврат, при условии если одежда пришла не того размера?",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet laoreet a, neque, gravida urna libero iaculis lacus. Pellentesque pellentesque massa ornare sit pellentesque elit nulla. Id est tellus maecenas ornare velit. Ut cras ut rhoncus fermentum pharetra a sit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet laoreet a, neque, gravida urna libero iaculis lacus. Pellentesque pellentesque massa ornare sit pellentesque elit nulla. Id est tellus maecenas ornare velit. ",
+      "id": "6"
+    },
+    {
+      "title": "Как я могу оставить заявку на обратную связь",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet laoreet a, neque, gravida urna libero iaculis lacus. Pellentesque pellentesque massa ornare sit pellentesque elit nulla. Id est tellus maecenas ornare velit. Ut cras ut rhoncus fermentum pharetra a sit.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet laoreet a, neque, gravida urna libero iaculis lacus. Pellentesque pellentesque massa ornare sit pellentesque elit nulla. Id est tellus maecenas ornare velit. ",
+      "id": "7"
+    }
+  ],
+  "float-links": [
+    {
+      "id": 1,
+      "url": "https://firebasestorage.googleapis.com/v0/b/zeon-store-8ad28.appspot.com/o/telegram.svg?alt=media&token=df7df144-30b3-4462-82f0-7d2aa2e629b5",
+      "link": "https://web.telegram.org/"
+    },
+    {
+      "id": 2,
+      "url": "https://firebasestorage.googleapis.com/v0/b/zeon-store-8ad28.appspot.com/o/whatsapp.svg?alt=media&token=be6a5bff-b2db-47eb-a08e-16b63dc0669b",
+      "link": "https://www.whatsapp.com"
+    },
+    {
+      "id": 3,
+      "url": "https://firebasestorage.googleapis.com/v0/b/zeon-store-8ad28.appspot.com/o/phone.svg?alt=media&token=5456aa62-3c81-4f21-8b43-7acb0cd4428a",
+      "link": false
+    }
+  ],
+  "back-call": [
+    {
+      "name": "a31231231",
+      "phone": "1223123119",
+      "id": 1
+    },
+    {
+      "name": "asdasdasd",
+      "phone": "42342342423",
+      "id": 2
+    },
+    {
+      "name": "asdasdasd",
+      "phone": "42342342423",
+      "id": 3
+    },
+    {
+      "name": "Kalnur",
+      "phone": "0703824111",
+      "id": 4
+    },
+    {
+      "name": "test 2",
+      "phone": "0987654321",
+      "id": 5
+    },
+    {
+      "name": "Kalnur",
+      "phone": "9842342934",
+      "id": 6
+    },
+    {
+      "name": "sadad",
+      "phone": "24234234234",
+      "id": 7
+    },
+    {
+      "name": "Jack",
+      "phone": "07038374234",
+      "id": 8
+    },
+    {
+      "name": "Азамат",
+      "phone": "0999112233",
+      "id": 9
+    },
+    {
+      "name": "Putin",
+      "phone": "07777777777",
+      "id": 10
     }
   ]
 }

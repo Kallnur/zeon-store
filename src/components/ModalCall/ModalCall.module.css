@@ -1,0 +1,55 @@
+.ModalForm{
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+}
+
+form{width: 100%;}
+
+.ModalTxt h2{
+    font-weight: 600;
+    margin-bottom: .5rem;
+}
+
+.ModalTxt span{
+    display: block;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 33px;
+    margin-bottom: .5rem;
+}
+
+.ModalForm > div{
+    width: 100%;
+    height: 50px;
+    border: 1px solid #BEBEBE;
+    border-radius: 3px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    padding: 3px 10px;
+}
+.ModalForm input{
+    position: relative;
+    outline: none;
+    border: none;
+    background: none;
+    padding: 3px 10px;
+    font-size: 1.1rem;
+    width: 90%;
+    height: 100%;
+}
+
+.ModalForm > div svg{
+    width: 30px;
+    height: 30px;
+}
+.ModalForm input::-webkit-outer-spin-button,
+.ModalForm input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+@media screen and (max-width: 425px) {
+    .ModalTxt h2{font-size: 1.3rem;}
+    .ModalTxt span{font-size: 1rem; line-height: 25px;}
+}

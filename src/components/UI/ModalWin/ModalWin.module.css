@@ -1,0 +1,43 @@
+.ModalWin{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .3);
+    z-index: 1001;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.ModalWinAvtive{display: flex;}
+
+.ModalContent{
+    position: relative;
+    width: 570px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: .8rem;
+    padding: 40px 45px;
+    background: #fff;
+}
+
+.Close{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+}
+
+.Close svg{
+    width: 22px;
+    height: 22px;
+}
+
+@media screen and (max-width: 425px) {
+    .ModalContent{width: 90%;}
+}

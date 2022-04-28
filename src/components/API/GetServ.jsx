@@ -26,6 +26,21 @@ export default class GetServ {
     static async getPhoneNumber(){
         return this.getData(`phone-number`)
     }
+    static async getHelp(){
+        return this.getData(`help`)
+    }
+    static async getFloatLinks(){
+        return this.getData(`float-links`)
+    }
+    static async getNews(limit, page){
+        const response = await axios.get('https://626178b173499e9af90cf01d.mockapi.io/news', {
+            params: {
+                limit: limit,
+                page: page
+            }
+        })
+        return response
+    }
     static async getProduct(limit, page){
         const response = await axios.get('http://localhost:3003/product', {
             params: {

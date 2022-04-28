@@ -1,0 +1,76 @@
+.ProductBody{
+    position: relative;
+    background: #fff;
+    width: 100%;
+    height: 250px;
+    padding: 1.2rem;
+}
+.ProductInfo{
+    display: flex;
+    justify-content: start;
+    gap: 1.2rem;
+    height: 100%;
+}
+.ProductClose{
+    position: absolute;
+    top: 1.1rem;
+    cursor: pointer;
+    right: 1.2rem;
+}
+.ProductClose svg{width: 23px; height: 23px; stroke-width: 0.5;}
+.ProductImg{
+    position: relative;
+    height: 100%;
+    width: 15.5%;
+}
+.ProductImg img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.ProductDesc{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.ProductDesc strong{
+    color: #393939;
+    font-weight: 400;
+    font-size: 1.4rem;
+    letter-spacing: .3px;
+}
+.ProductSize{
+    color: #7C7C7C;
+    font-size: 1.1rem;
+    display: block;
+    margin-bottom: 10px;
+}
+.ProductColor{
+    color: #7C7C7C;
+    font-size: 1.1rem;
+}
+.ProductCol{
+    display: flex; 
+    align-items: center;
+    gap: 2rem;
+}
+.ProductCol span{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.ProductCol span:nth-child(odd){
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 400;
+    width: 55px;
+    height: 55px;
+    background: #F8F8F8;
+    border-radius: 7.5px;
+    border: 1px solid #EFEFEF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}   

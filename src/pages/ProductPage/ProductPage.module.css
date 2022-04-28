@@ -92,7 +92,7 @@
     align-items: center;
 }
 .ProductDesc li strong{font-weight: 500;}
-.ProductBtns button{
+.ProductBtns button, .ProductBtns a{
     height: 55px;
     background: #1D1D1B;
     display: flex;
@@ -108,8 +108,8 @@
     cursor: pointer;
     transition: .3s;
 }
-.ProductBtns button svg{fill: #fff;}
 .ProductBtns button:nth-child(2){width: 50px;}
+.ProductBtns button:nth-child(2) svg {position: absolute;}
 .ProductPageImg{
     display: flex;
     flex-wrap: wrap;
@@ -119,6 +119,17 @@
     row-gap: 1rem;
 }
 .ProductBtns button:hover{box-shadow: inset 0 0 20px #7b5959;}
+.ProductBtns a:hover{box-shadow: inset 0 0 20px #7b5959;}
+.ProductPageBusket{transform-origin: top center;}
+.ProductPageHeart, .ProductPageBusket{
+    transform-origin: bottom center;
+    width: 28px;
+    height: 26px;
+}
+.ProductBtns button:hover svg{animation: svgHover .3s ease-in-out;}
+
+.ProductPageHeart, .ProductPageBusket{ fill: #fff; }
+.ProductActiveHeart{transition: .2s;}
 
 .ProductPageImg img{width: 49%;}
 .ProductPageImg img:nth-last-child(-n+4){
@@ -143,4 +154,13 @@
     .ProductDesc{flex-direction: column; row-gap: 1.5rem;}
     .ProductDesc li {width: 100%;}
     .ProductDesc li * {font-weight: 400;}
+    .ProductBtns{gap: 5px;}
+    .ProductBtns button:nth-child(2){min-width: 50px;}
+}
+
+@keyframes svgHover{
+    0%{transform: rotate(0);}
+    25%{transform: rotate(-5deg);}
+    75%{transform: rotate(5deg);}
+    100%{transform: rotate(0);}
 }

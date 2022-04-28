@@ -1,0 +1,56 @@
+.FloatBlock{
+    position: fixed;
+    bottom: 5rem;
+    right: 0;
+    padding-right: 7.5%;
+    z-index: 1000;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 2rem;
+    animation: floatBlock 3s infinite linear;
+}
+
+.FloatLinkBlock{
+    display: flex;
+    gap: .4rem;
+    height: 0;
+    overflow: hidden;
+    transition: .3s;
+}
+
+.FloatLinkBlockActive{
+    height: 50px;
+}
+
+.FloatButton{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+.FloatButton svg{
+    width: 30px;
+    height: 30px;
+    fill: red;
+}
+
+.FloatButtonIconTop{
+    position: absolute;
+    transition: .3s;
+    transform: translateY(-160%);
+}
+
+.FloatButtonIconTop:hover{
+    transform: translateY(-200%);
+}
+
+.FloatLinks{cursor: pointer;}
+
+@keyframes floatBlock{
+    0%{transform: translateY(0);}
+    25%{transform: translateY(-5px);}
+    75%{transform: translateY(5px);}
+    100%{transform: translateY(0);}
+}

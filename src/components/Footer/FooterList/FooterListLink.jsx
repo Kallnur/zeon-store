@@ -21,7 +21,10 @@ const FooterListLink = ({links, ind, title}) => {
                 </li>    
                 :
                 <li key={i + Math.random() * 10}>
-                    <a href={obj.url}>{obj.txt}</a>   
+                    <a href={obj.url}>
+                    <img src={obj.icon} alt="Icon" />
+                    {obj.txt}
+                </a>   
                 </li>       
             )
         }

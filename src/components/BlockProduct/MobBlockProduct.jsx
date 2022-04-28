@@ -34,7 +34,7 @@ const MobBlockProduct = ({title, col}) => {
         >
           {
             renderProduct.map((obj, i) => 
-            <SwiperSlide  key={i + 1 * Math.random()}>
+            <SwiperSlide  key={i + 1 * Math.random()} className='productMobSlide'>
               <Product info={obj}/>    
             </SwiperSlide>
             )

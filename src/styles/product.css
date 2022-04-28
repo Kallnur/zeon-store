@@ -138,7 +138,13 @@
     align-items: center;
 }
 
-.new-product-group{flex-wrap: nowrap; gap: .5rem;}
+.new-product-group{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+.new-product-group > div{
+    width: 100%;
+}
 .new-product-title{margin: 2rem 0; font-weight: 500;}
 /* .redHeart{opacity: 0;} */
 

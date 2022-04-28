@@ -3,12 +3,11 @@ import { useDispatch, useSelector } from "react-redux";
 import { addToFavorite, removeToFavorite } from "../store/favorite";
 import { checkArr } from "../utils/allFunc";
 
-export default function useToggleFavorite(info, setVisi){
+export default function useToggleFavorite({info, setVisi}){
     const favorites = useSelector(state => state.favorite.favorite)
     const dispatch = useDispatch()
     const [product, setProduct] = useState(info)
-
-    const toggleFavorite = () => {
+    const toggleFavorite = () => {  
         if( !product.favorite ){
           if(!checkArr(favorites, info)){
             dispatch(addToFavorite( info ));
@@ -25,7 +24,6 @@ export default function useToggleFavorite(info, setVisi){
           setProduct({...product, favorite: false})
         }
         console.log(product);
-    }
-
+    }  
     return { favorites, toggleFavorite }
 }
