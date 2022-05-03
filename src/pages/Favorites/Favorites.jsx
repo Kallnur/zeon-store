@@ -1,14 +1,22 @@
 import React, { useEffect, useState } from 'react'
-import { useSelector } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import BlockProduct from '../../components/BlockProduct/BlockProduct'
 import MobBlockProduct from '../../components/BlockProduct/MobBlockProduct'
 import PageTitle from '../../components/PageTitle/PageTitle'
 import Product from '../../components/Product/Product'
+import { toogleCrumb } from '../../store/breadcrumb'
 import classCss from './Favorites.module.css'
 
 const Favorits = () => {
 
   const faforites = useSelector(state => state.favorite.favorite)
+  const dispatch = useDispatch();
+  const crumb = [{txt: 'Главная ', href: '/'},{txt:'Избранное', href: '/favorites'}]
+
+  useEffect(() => {
+    dispatch(toogleCrumb(crumb))
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  })
 
   return (
     <div className={classCss.Favorites}>

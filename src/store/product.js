@@ -26,6 +26,11 @@ const product = createSlice({
         status: null,
         error: null
     },
+    reducers: {
+        productUpdateColor(state, action){
+            state.product[0].colors = action.payload
+        }
+    },
     extraReducers: {
         [getProducts.pending]: (state) => {
             state.status = 'Loading'
@@ -41,6 +46,6 @@ const product = createSlice({
     }
 })
 
-export const {addProducts} = product.actions
+export const {productUpdateColor} = product.actions
 
 export default product.reducer

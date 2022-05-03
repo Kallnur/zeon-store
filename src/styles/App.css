@@ -5,6 +5,14 @@
   color: #393939;
   font-family: 'Montserrat';
 }
+::-webkit-scrollbar {
+  width: 17px;
+  background: #F8F9FA;
+}
+
+::-webkit-scrollbar-thumb{
+  background: #C7C7C7;
+}
 
 body{
   background: #F8F8F8;
@@ -49,6 +57,29 @@ ul, ol{
   opacity: 1;
   transition: all 500ms ease-in;
   transform: translateY(0%);
+}
+.TCItem-exit {
+  opacity: 1;
+  transform: translateY(0%);
+}
+.TCItem-exit-active {
+  opacity: 0;
+  transition: all 500ms ease-in;
+  transform: translateX(100%);
+}
+.basketTransitiom-enter {
+  opacity: 0;
+}
+.basketTransitiom-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+.basketTransitiom-exit {
+  opacity: 1;
+}
+.basketTransitiom-exit-active {
+  opacity: 0;
+  transition: opacity 500ms ease-in;
 }
 
 .homeMobSwiper{height: initial !important;}

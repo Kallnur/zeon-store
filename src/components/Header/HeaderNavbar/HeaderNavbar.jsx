@@ -3,17 +3,17 @@ import { Link } from 'react-router-dom'
 import GetServ from '../../API/GetServ'
 import classCss from '../Header.module.css'
 
-export const Headlist = () => {
+export const Headlist = ({toggleVisi}) => {
 
     return(
     <ul className={classCss.HeaderList}>
-        <li>
+        <li onClick={toggleVisi}>
             <Link to='/about-us'>O нас</Link>
         </li>
-        <li>
+        <li onClick={toggleVisi}>
             <Link to='/collection'>Коллекция</Link>
         </li>
-        <li>
+        <li onClick={toggleVisi}>
             <Link to='news'>Новости</Link>
         </li>
     </ul>)

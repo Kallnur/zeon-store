@@ -112,7 +112,7 @@
     height: 23px;
 }
 .HeaderMenu{
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     background: #fff;
@@ -120,7 +120,10 @@
     height: 100vh;
     padding: 1.3rem;
     transform: translateX(-115%);
+    transition: .3s;
+    z-index: 1111;
 }
+
 .HeaderMenuBody{
     display: flex;
     height: 90%;
@@ -128,6 +131,17 @@
     justify-content: space-between;
     align-items: flex-start;
     margin-top: 1.2rem;
+    z-index: 1111;
+}
+.DarkFon{
+    position: fixed;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(215, 215, 215, 0.6);;
+    z-index: 1010;
 }
 .HeaderMenu div .HeaderBasFav, .HeaderMenu div .HeaderList{
     flex-direction: column;
@@ -171,6 +185,9 @@
     display: none;
 }
 
+.HeaderMenuClose{position: absolute; top: 1.5rem; right: 1.4rem;}
+.HeaderMenuClose svg{ width: 22px; height: 22px;}
+
 @media screen and (max-width: 425px) {
     .HeaderDesk{
         display: none;
@@ -181,8 +198,13 @@
         justify-content: space-between;
         padding: .4rem 0;
         align-items: center;
+        padding-right: 3px;
     }
     .HeaderMobile a img{
         width: 111px;
     }
+    .HeaderMobile a{font-weight: 500;}
+    .HeaderTel a {font-weight: 400;}
+    .HeaderMenuBody p {font-weight: 500;}
+    .HeaderMenuActive{transform: translateX(0);}
 }

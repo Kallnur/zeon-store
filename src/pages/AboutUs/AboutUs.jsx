@@ -1,9 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import classCss from './AboutUs.module.css'
 import GetServ from '../../components/API/GetServ'
+import { useDispatch } from 'react-redux'
+import { addCrumb, toogleCrumb } from '../../store/breadcrumb'
 
 const AboutUs = () => {
 
+  const dispatch = useDispatch();
+  const crumb = [{txt: 'Главная ', href: '/'},{txt:'О нас ', href:'/about-us'}]
   const [aboutData, setAboutData] = useState({
     img: [],
     txt: {}
@@ -17,6 +21,8 @@ const AboutUs = () => {
 
   useEffect(()=>{
     getAboutUs();
+    dispatch(toogleCrumb(crumb))
+    window.scrollTo({ top: 0, behavior: 'smooth' })
   }, [])
 
   return (

@@ -1,5 +1,5 @@
 .Busket{
-    padding: 1.5rem 0;
+    padding: .5rem 0;
 }
 .BusketBody{
     position: relative;
@@ -19,3 +19,9 @@
 }
 
 .BusketBody div{min-width: 0;}
+
+@media screen and (max-width: 425px) {
+    /* .BusketBody{flex-wrap: wrap;} */
+    .BusketBodyMob{flex-direction: column; gap: 0;}
+    .BusketProductGroup{width: 100%;}
+}

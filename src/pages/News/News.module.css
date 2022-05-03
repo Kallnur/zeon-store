@@ -64,10 +64,10 @@
         object-fit: cover;
     }
     .NewsDesc{
-        height: 350px;
+        height: 340px;
         overflow: hidden;
         transition: .5s;
     }
     .NewsBtn{ display: block; }
-    .NewsDescMob{ height: 820px;}
+    .NewsDescMob{ height: 620px;}
 }

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Adventage from './Adventage/Adventage'
 import classCss from './Home.module.css'
 import HomeSlider from './HomeSlider/HomeSlider'
@@ -6,8 +6,18 @@ import HomeProduct from './HomeProduct/HomeProduct'
 import CollectionGroup from '../../components/CollectionGroup/CollectionGroup'
 import MobHomeProduct from './HomeProduct/MobHomeProduct'
 import MobCollectionGroup from '../../components/CollectionGroup/MobCollectionGroup'
+import { toogleCrumb } from '../../store/breadcrumb'
+import { useDispatch } from 'react-redux'
 
 const Home = () => {
+
+  const dispatch = useDispatch();
+  const crumb = [{txt: 'Главная ', href: '/'}]
+
+  useEffect(() => {
+    dispatch(toogleCrumb(crumb))
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }, [])
 
   return (
     <div className={classCss.Home}>

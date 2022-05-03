@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Scrollbar } from 'swiper';
 import 'swiper/css/scrollbar';
 import 'swiper/css';
+import 'swiper/css/lazy'
 
 const ProductSlider = ({urls}) => {
 
@@ -23,7 +24,9 @@ const ProductSlider = ({urls}) => {
             >
             {
                 urls.map((url, i) => 
-                    <SwiperSlide key={Math.random() * i}>
+                    <SwiperSlide 
+                        key={Math.random() * i}
+                    >
                         <img src={url} alt="Product" />
                     </SwiperSlide>
                 )

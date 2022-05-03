@@ -14,7 +14,7 @@ const ModalCall = ({done}) => {
     const [btnActive, setBtnActive] = useState(false) 
 
     const valid = () => {
-        if(userInfo.name.length > 3 && userInfo.phone.length > 9) setBtnActive(true)
+        if(userInfo.name.length > 1 && userInfo.phone.length > 9) setBtnActive(true)
         else setBtnActive(false)
         console.log(userInfo)
     }

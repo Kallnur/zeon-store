@@ -6,6 +6,8 @@ import Pagination from '../../components/Pagination/Pagination';
 import BlockProduct from '../../components/BlockProduct/BlockProduct';
 import GetServ from '../../components/API/GetServ';
 import { getTotalPages } from '../../utils/allFunc';
+import { useDispatch } from 'react-redux';
+import { addCrumb } from '../../store/breadcrumb';
 
 const CollectionProduct = ({route}) => {
 
@@ -14,10 +16,10 @@ const CollectionProduct = ({route}) => {
         limit: 12,
         page: 1
     })
-    const [products, setProducts] = useState([]);
-
-
     let {id} = useParams();
+    const [products, setProducts] = useState([]);
+    const dispatch = useDispatch();
+    const crumb = {txt: id, href: '/collection/'};
 
     const getProduct = async () => {
         const response = await GetServ.getProduct(productQuer.limit, productQuer.page); 
@@ -28,6 +30,7 @@ const CollectionProduct = ({route}) => {
         setProductQuer({...productQuer, page: page})
     }
 
+    useEffect(() => {dispatch(addCrumb(crumb)); window.scrollTo({ top: 0, behavior: 'smooth' })})
     useEffect(() => {
         getTotalPages(productQuer, setProductQuer, GetServ.getProduct(12,1))
         getProduct()

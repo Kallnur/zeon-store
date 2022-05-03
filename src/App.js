@@ -29,9 +29,6 @@ function App() {
   const [modalVisi, setModalVisi] = useState(false)
   const [postInfoDone, setPostInfoDone] = useState(false)
 
-  if(modalVisi) document.body.style.overflow = 'hidden';
-    else document.body.style.overflow = '';
-
   useEffect(() => {
     dispatch(getProducts())
   }, [])

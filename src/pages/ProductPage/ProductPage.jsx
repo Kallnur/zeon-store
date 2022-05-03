@@ -7,25 +7,29 @@ import ProductPageImages from './ProductPageImages/ProductPageImages';
 import BlockProduct from '../../components/BlockProduct/BlockProduct';
 import { getProducts } from '../../store/product';
 import MobBlockProduct from '../../components/BlockProduct/MobBlockProduct'
+import { addCrumb } from '../../store/breadcrumb';
 
 const ProductPage = () => {
 
     const {id} = useParams();
-    // const [product, setProduct] = useState([])
     const product = useSelector(state => state.product.product)
-    const dispatch = useDispatch()
+    const dispatch = useDispatch(); 
+    let crumb;
+    if(product.length) crumb = () => {return {txt: product[0].collection, href: '/product/:id'}};
+    // console.log(crumb());
+    
 
-    // const getProduct = () => {
-    //     setProduct(products.filter(obj => obj.id === Number(id)))
-    // }
-    // console.log(product)
-
-    useEffect( () => { dispatch(getProducts(id)) }, [] )
+    useEffect( () => { 
+        dispatch(getProducts(id)); 
+        if(crumb) dispatch(addCrumb(crumb()));
+        window.scrollTo({ top: 0, behavior: 'smooth' })
+    }, [] )
     useEffect( () => { 
         dispatch(getProducts(id)) 
-        window.scrollTo({ top: 80 }); 
+        window.scrollTo({ top: 80 });
     }, [id] )
-
+    useEffect(() => {if(crumb) dispatch(addCrumb(crumb()));if(crumb) console.log(crumb());}, [product])
+    
   return (
     <div className={classCss.ProductPage}>
         <div className='container'>

@@ -24,15 +24,19 @@ export const SearchInput = ({setVisi, search, setSearch}) => {
         />
     )
 }
-export const SearchBtn = ({search, setSearch}) => {
+export const SearchBtn = ({search, setSearch, value}) => {
+    const checkValue = (e) => {
+        if(value.length < 3) e.preventDefault()
+            else setSearch('');
+    }
     return(
-        <Link to={`/res-search/${search}`} onClick={() => setSearch('')}>
+        <Link to={`/res-search/${search}`} onClick={checkValue}>
             <Search />
         </Link>
     )
 }
 
-export const BasFav = () => {
+export const BasFav = ({toggleVisi}) => {
     const favorite = useSelector(state => state.favorite.favorite)
     const basket   = useSelector(state => state.basket.basket)
     const activeClass = []
@@ -41,10 +45,18 @@ export const BasFav = () => {
     basket.length ? activeC.push(classCss.BasFavActive) : activeC.pop()
 
     return(
+        toggleVisi
+        ?
+        <div className={classCss.HeaderBasFav}>
+           <Link onClick={toggleVisi} to="/favorites"><span className={activeClass}><Heart/></span> Избранное</Link>
+           <Link onClick={toggleVisi} to="/basket"><span className={activeC}><Busket/></span> Корзина</Link>
+        </div>
+        :
         <div className={classCss.HeaderBasFav}>
            <Link to="/favorites"><span className={activeClass}><Heart/></span> Избранное</Link>
            <Link to="/basket"><span className={activeC}><Busket/></span> Корзина</Link>
         </div>
+        
     )
 }
 
@@ -63,7 +75,7 @@ const HeaderLogo = () => {
                     search={search}
                     setSearch={setSearch}
                 />
-                <SearchBtn search={search} setSearch={setSearch}/>
+                <SearchBtn search={search} setSearch={setSearch} value={search}/>
                 <SortArrWindow visi={visi} sortedProduct={sortedProduct} setSearch={setSearch}/>
             </div>
             <BasFav/>

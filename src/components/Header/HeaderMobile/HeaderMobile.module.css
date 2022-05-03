@@ -1,0 +1,58 @@
+.HeaderMobileBurger{
+    padding: 1.3rem .8rem;
+    border: 1px solid #EDEDED;
+    z-index: 1011;
+}
+
+.HeaderMobileBtn{
+    display: block;
+    position: relative;
+    width: 28px;
+    height: 3.39px;
+    background: #354455;
+}
+.HeaderMobileBtn::after, .HeaderMobileBtn::before{
+    position: absolute;
+    width: 28px;
+    height: 3.39px;
+    background: #354455;
+    content: '';
+}
+.HeaderMobileBtn::after{transform: translateY(-230%);}
+.HeaderMobileBtn::before{transform: translateY(230%);}
+
+.HeaderInputBlock{
+    position: absolute;
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -100%;
+    border: 1px solid #E0E0E0;
+    height: 48px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 15px;
+    background: #F8F8F8;
+    display: none;
+    z-index: 1111;
+}
+.HeaderInputBlock input{
+    border: none;
+    outline: none;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #F8F8F8;
+    background: none;
+    font-size: 1.1rem;
+}
+.HeaderInputBlockActive{display: flex;}
+.BtnDarkFon{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 1010;
+}

@@ -61,3 +61,21 @@ export const asyncProductHeart = (arr, obj, setState) => {
   if(checkArr(arr, obj)) setState(1)
     else setState(0)
 }
+
+export const getObjInArr = (arr, arrObj, temp) => {
+    let newArr = []
+    console.log(arr)
+    newArr = arr.filter(obj => obj[Object.keys(obj)[arrObj]] === temp)
+    return newArr[0];
+}
+
+export const checkColor = (arr, color, info) => {
+    if(arr.length && color.length && info){
+        console.log(arr, color)
+        const newArr = arr.filter(arrObj => 
+            arrObj.color.rgb === color[0].rgb && arrObj.id === info.id
+        )
+        if(newArr.length) return true 
+        else return false        
+    }
+}

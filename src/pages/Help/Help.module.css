@@ -1,18 +1,30 @@
 .HelpBody{
+    position: relative;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     gap: 2rem;
-    align-items: start;
-    padding: 1rem 0 3rem 0;
-    position: relative;
-    width: 100%;
+    padding: .5rem 0 3rem 0;
 }
 .HelpBody h1{margin-top: 0;}
+
+.HelpGroupBlock{width: 60%; position: relative;}
 
 .HelpGroup{
     display: flex;
     flex-direction: column;
     gap: 1.1rem;
+}
+
+.HelpImg{
+    position: relative;
+    width: 44%;
+}
+
+.HelpImg img{
+    position: relative;
+    width: 100%;
+    object-fit: cover;
 }
 
 .HelpBlock{
@@ -51,7 +63,7 @@
     transform: rotate(-90deg);
 }
 
-.HelpTitleSvgTop > svg{
+.HelpBlockActive  svg{
     transform: rotate(90deg);
 }
 .HelpBlockActive{

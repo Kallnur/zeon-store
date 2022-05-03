@@ -14,8 +14,8 @@ const SortArrWindow = ({sortedProduct, visi, setSearch}) => {
         <li></li>
         :
         sortedProduct.map(obj => 
-            <li className={classCss.Item}>
-                <Link key={obj} to={`/res-search/${obj}`} onClick={() => setSearch('')}>
+            <li key={obj} className={classCss.Item}>
+                <Link to={`/res-search/${obj}`} onClick={() => setSearch('')}>
                     {obj}
                 </Link>
             </li>    

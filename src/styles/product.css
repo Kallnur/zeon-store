@@ -15,6 +15,8 @@
     border: 1px solid transparent;
     z-index: 100;
     overflow: hidden;
+    background: #fff;
+    border: 1px solid #f1ece3;
 }
 
 .product-perc{
@@ -48,7 +50,7 @@
 }
 
 .product-img img:hover{transform: scale(1);}
-.product-body:hover{border: 1px solid #F2E5CF;}
+.product-body:hover{border: 1px solid #f8e9cf;}
 .product-body:hover .product-like svg:nth-child(1){opacity: 1;}
 
 .product-img img{

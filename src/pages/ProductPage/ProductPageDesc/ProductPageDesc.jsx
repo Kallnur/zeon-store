@@ -1,9 +1,11 @@
 import React from "react";
 import NewPrice from "../../../components/NewPrice/NewPrice";
+import ProductColors from "../ProductColors/ProductColors";
 import classCss from "../ProductPage.module.css";
 import ProductPageInfo from "../ProductPageInfo/ProductPageInfo";
 
 const ProductPageDesc = ({ info }) => {
+
   return (
     <div className={classCss.ProductDescBlock}>
       {
@@ -22,19 +24,7 @@ const ProductPageDesc = ({ info }) => {
                </strong>
                <div className={classCss.ProductColor}>
                   <span>Цвет:</span>
-                  <ul className={classCss.ProductDescColor}>
-                     {
-                        !info.colors
-                        ?
-                        <h1>Colors not found</h1>
-                        :
-                        info.colors.map((obj) => (
-                           <li key={obj.rgb} className="product-color-item">
-                              <span style={{ background: `${obj.rgb}` }}></span>
-                           </li>
-                        ))
-                     }
-                  </ul>
+                  <ProductColors info={info}/>
                </div>
             </div>
             <h1 className={classCss.ProductPrice}>

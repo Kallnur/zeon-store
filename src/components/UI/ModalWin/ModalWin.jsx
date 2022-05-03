@@ -5,7 +5,11 @@ import classCss from './ModalWin.module.css'
 const ModalWin = ({children, visi, setVisi}) => {
 
     let rootClass = [classCss.ModalWin]
-    if(visi) rootClass.push(classCss.ModalWinAvtive)
+    if(visi) {
+      rootClass.push(classCss.ModalWinAvtive);
+      document.body.style.overflow = 'hidden';
+    }
+      else document.body.style.overflow = '';
 
   return (
     <div className={rootClass.join(' ')} onClick={() => setVisi(false)}>

@@ -1745,56 +1745,6 @@
       "link": false
     }
   ],
-  "back-call": [
-    {
-      "name": "a31231231",
-      "phone": "1223123119",
-      "id": 1
-    },
-    {
-      "name": "asdasdasd",
-      "phone": "42342342423",
-      "id": 2
-    },
-    {
-      "name": "asdasdasd",
-      "phone": "42342342423",
-      "id": 3
-    },
-    {
-      "name": "Kalnur",
-      "phone": "0703824111",
-      "id": 4
-    },
-    {
-      "name": "test 2",
-      "phone": "0987654321",
-      "id": 5
-    },
-    {
-      "name": "Kalnur",
-      "phone": "9842342934",
-      "id": 6
-    },
-    {
-      "name": "sadad",
-      "phone": "24234234234",
-      "id": 7
-    },
-    {
-      "name": "Jack",
-      "phone": "07038374234",
-      "id": 8
-    },
-    {
-      "name": "Азамат",
-      "phone": "0999112233",
-      "id": 9
-    },
-    {
-      "name": "Putin",
-      "phone": "07777777777",
-      "id": 10
-    }
-  ]
+  "back-call": [],
+  "order": []
 }

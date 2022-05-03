@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react'
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom'
 import BlockProduct from '../../components/BlockProduct/BlockProduct';
 import MobBlockProduct from '../../components/BlockProduct/MobBlockProduct';
 import PageTitle from '../../components/PageTitle/PageTitle'
 import Product from '../../components/Product/Product';
+import { toogleCrumb } from '../../store/breadcrumb';
 import classCss from './ResSearch.module.css'
 
 const ResSearch = () => {
@@ -12,6 +13,8 @@ const ResSearch = () => {
    const { id } = useParams();
    const products = useSelector(state => state.product.products)
    const [searchProduct, setSearchProduct] = useState([])
+   const dispatch = useDispatch();
+   const crumb = [{txt: 'Главная ', href: '/'},{txt:'Результаты поиска ', href: `/res-search/${id}`}]
 
    console.log(products)
 
@@ -21,7 +24,10 @@ const ResSearch = () => {
       console.log(res, searchProduct, products)
    }
 
-   useEffect(() => {searchSorting()}, [])
+   useEffect(() => {
+      searchSorting(); dispatch(toogleCrumb(crumb)); 
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+   }, [])
    useEffect(() => {searchSorting()}, [id, products])
 
   return (

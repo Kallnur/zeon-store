@@ -28,6 +28,10 @@
 
 .ProductPrice{margin: 1.1rem 0;}
 
+.ProductPrice span:nth-child(2){
+    font-size: 1.6rem;
+}
+
 .ProductPrice *{
     font-size: 2rem;
     font-weight: 400;

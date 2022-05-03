@@ -1,0 +1,63 @@
+.ModalOrder{
+    position: relative;
+    width: 100%;
+}
+.ModalFormBody{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.ModalTitle{margin-bottom: 1.7rem;}
+
+.ModalFormBody div label{
+    display: block;
+    color: #808080;
+}
+
+.ModalFormBody > div input{
+    width: 100%;
+    height: 45px;
+    outline: none;
+    background: none;
+    padding: 15px;
+    border: 1px solid #E7E7E7;
+    margin-top: .33rem;
+    font-size: 1rem;
+}
+
+.CheckBox{
+    display: flex;
+    align-items: center;
+    margin: .5rem 0 1.2rem 0;
+}
+
+.CheckBox input {
+    position: absolute;
+    -webkit-appearance: none;
+}
+
+.CheckBoxMark{
+    cursor: pointer;
+    border: 1px solid #393939;
+    width: 17px;
+    height: 17px;
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3.3px;
+    margin-right: .4rem;
+}
+
+.CheckBox a{color: #006BED;}
+.CheckBox span{font-weight: 500;}
+
+.CheckBox input:checked + .CheckBoxMark{background: #393939;}
+
+.ModalFormBody > button{background-color: #1D1D1B;}
+
+.ModalErr{ color: #E5271B !important; }
+.ModalErr > input{ border: 1px solid #E5271B !important; }

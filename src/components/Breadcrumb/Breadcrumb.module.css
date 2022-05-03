@@ -1,0 +1,29 @@
+.PagePath{
+    padding: 25px 0 20px 0;
+    font-size: 14px;
+}
+
+.CrumbBody{
+    display: flex;
+    align-items: center;
+    gap: 1.3rem;
+}
+
+.Crumbs{
+    font-weight: 500;
+    font-size: 1rem;
+    color: #393939;
+    letter-spacing: .4px;
+    font-size: 1.05;
+}
+
+.CrumbBody a{display: flex; align-items: center; gap: 1.3rem;}
+
+.CrumbBody span{
+    color: #979797;
+    word-spacing: normal;
+}
+
+@media screen and (max-width: 425px) {
+    .PagePath{display: none;}
+}

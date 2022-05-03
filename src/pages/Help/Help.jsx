@@ -3,6 +3,8 @@ import GetServ from '../../components/API/GetServ'
 import classCss from './Help.module.css'
 import PageTitle from '../../components/PageTitle/PageTitle'
 import HelpBlock from './HelpBlock/HelpBlock';
+import { useDispatch } from 'react-redux';
+import { toogleCrumb } from '../../store/breadcrumb';
 
 const Help = () => {
 
@@ -12,9 +14,13 @@ const Help = () => {
     const response = await GetServ.getHelp()
     setHelpInfo(response.data)
   }
+  const dispatch = useDispatch();
+  const crumb = [{txt: 'Главная ', href: '/'},{txt:'Помощь ', href: '/help'}]
 
   useEffect(() => {
     getHelp();
+    dispatch(toogleCrumb(crumb))
+    window.scrollTo({ top: 0, behavior: 'smooth' })
   }, [])
 
   return (

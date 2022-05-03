@@ -2,10 +2,14 @@ import React, { useEffect, useState } from 'react'
 import GetServ from '../../components/API/GetServ';
 import classCss from './PublicOffer.module.css';
 import Paraph from './Paraph/Paraph';
+import { useDispatch } from 'react-redux';
+import { toogleCrumb } from '../../store/breadcrumb';
 
 const PublicOffer = () => {
 
   const [offerData, setOfferData] = useState();
+  const dispatch = useDispatch();
+  const crumb = [{txt: 'Главная ', href: '/'},{txt:'Публичная оферта  ', href: '/offer'}]
   
   async function getOffer () {
     const response = await GetServ.getOffer(); 
@@ -14,6 +18,8 @@ const PublicOffer = () => {
 
   useEffect(() => {
     getOffer();
+    dispatch(toogleCrumb(crumb))
+    window.scrollTo({ top: 0, behavior: 'smooth' })
   }, [])
 
   return (

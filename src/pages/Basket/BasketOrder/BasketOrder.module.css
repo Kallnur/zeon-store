@@ -33,15 +33,35 @@
 .BasketOrderItem{
     font-size: 1.05rem;
     letter-spacing: .4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+.BasketOrderItem span{font-weight: 400;}
+.BasketOrderSumm span:nth-child(2){color: #393939; font-weight: 400;}
 
 .BasketOrderSumm{
     margin: 1.25rem 0;
     font-size: 1.05rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+
+.BasketOrderVisiBtn{
+    width: 100%;
+    min-height: 45px;
+    border: 1px solid #EDEDED;
+    outline: none;
+    background: none;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    display: none;
+}
+
 .BasketOrderBtn{
     width: 100%;
-    height: 55px;
+    min-height: 55px;
     border: none;
     outline: none;
     background: #E5271B;
@@ -50,3 +70,22 @@
     cursor: pointer;
 }
 .BasketOrderBtn:hover{box-shadow: 2px 0 6px #f5e2e2;}
+
+@media screen and (max-width: 425px) {
+    .BasketOrder{
+        position: relative;
+        height: 190px;
+        width: 110%;
+        left: -5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        overflow: hidden;
+        background: #fff;
+        transition: .3s;
+    }
+    .BasketOrderBtn{min-height: 48px;}
+    .BasketOrderVisiBtn{min-height: 40px; display: block;}
+    .BasketOrderMobAct{height: 460px;}
+    .BasketOrderHr{margin-bottom: 5px;}
+}
