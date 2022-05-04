@@ -9,7 +9,7 @@
 
 .Pagination span{cursor: pointer;}
 
-.PaginationBullet{
+.PaginationBullet, .PaginationBtn{
     width: 50px;
     height: 50px;
     color: #979797;
@@ -17,9 +17,11 @@
     justify-content: center;
     align-items: center;
     font-weight: 500;
+    transition: .3s;
+    background: #fff;
 }
 
-.PaginationBullet:hover{
+.PaginationBullet:hover, .PaginationBtn:hover{
     background: #1D1D1B;
     color: #fff;
     font-size: 1.1rem;
@@ -40,8 +42,10 @@
 .PaginationBtn svg{
     width: 12px;
     height: 24px;
-    transition: .3s;
 }
-.Pagination span:last-child svg{transform: rotate(180deg) translateX(50%);}
-.Pagination span:nth-child(1):hover svg{transform: translateX(-8px);}
-.Pagination span:last-child:hover svg{transform: translateX(8px) rotate(180deg);} 
+
+.PaginationBtn:hover > svg path{fill: #fff;}
+
+.Pagination span:last-child svg{transform: rotate(180deg);}
+.Pagination span:nth-child(1):hover {transform: translateX(-8px);}
+.Pagination span:last-child:hover {transform: translateX(8px);} 

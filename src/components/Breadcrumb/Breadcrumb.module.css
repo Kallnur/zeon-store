@@ -1,6 +1,7 @@
 .PagePath{
-    padding: 25px 0 20px 0;
+    padding: 28px 0 30px 0;
     font-size: 14px;
+    overflow: hidden;
 }
 
 .CrumbBody{
@@ -24,6 +25,6 @@
     word-spacing: normal;
 }
 
-@media screen and (max-width: 425px) {
+/* @media screen and (max-width: 425px) {
     .PagePath{display: none;}
-}
+} */

@@ -2,6 +2,7 @@
     position: relative;
     width: 100%;
     background: #fff;
+    overflow: hidden;
 }
 
 .HeaderDesk{
@@ -18,16 +19,6 @@
     align-items: center;
     width: 100%;
     height: 65px;
-}
-.HeaderNavbar::after{
-    position: absolute;
-    content: '';
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 65px;
-    box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.05);
-    z-index: 1;
 }
 .HeaderList{
     display: flex;
@@ -50,6 +41,16 @@
     color: #979797;
 }
 
+.HeaderLogo::before{
+    position: absolute;
+    content: '';
+    width: 100vw;
+    height: 140%;
+    top: -20%;
+    left: -9%;
+    border: 1px solid #F2F2F2;
+    /* z-index: 1000; */
+}
 .HeaderLogo{
     position: relative;
     width: 100%;
@@ -57,7 +58,10 @@
     justify-content: space-between;
     align-items: center;
     gap: 1.5rem;
+    z-index: 10;
+    margin-bottom: 1rem;
 }
+.HeaderLogo a{z-index: 1000;}
 
 .HeaderInputBlock{
     width: 60%;
@@ -116,7 +120,7 @@
     top: 0;
     left: 0;
     background: #fff;
-    width: 370px;
+    width: 85%;
     height: 100vh;
     padding: 1.3rem;
     transform: translateX(-115%);
@@ -199,12 +203,21 @@
         padding: .4rem 0;
         align-items: center;
         padding-right: 3px;
+        height: 80px;
     }
-    .HeaderMobile a img{
+    .HeaderMobile > a img{
         width: 111px;
     }
     .HeaderMobile a{font-weight: 500;}
     .HeaderTel a {font-weight: 400;}
     .HeaderMenuBody p {font-weight: 500;}
     .HeaderMenuActive{transform: translateX(0);}
+    .FloatLink{
+        display: flex; gap: .5rem;
+        flex-wrap: wrap;
+        margin-top: .8rem;
+        padding-top: .8rem;
+        border-top: 2px solid #D3D3D3;
+    }
+    .FloatLink p {width: 100%; margin-bottom: .4rem;}
 }

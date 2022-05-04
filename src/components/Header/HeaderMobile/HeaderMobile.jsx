@@ -7,7 +7,7 @@ import SortArrWindow from '../../SortArrWindow/SortArrWindow'
 import { useSelector } from 'react-redux'
 import { Search } from '../../Icons/Icons'
 
-const HeaderMobile = ({visi, setVisi, toggleVisi}) => {
+const HeaderMobile = ({toggleVisi}) => {
 
   const [search, setSearch] = useState('');
   const [btnVisi, setBtnVisi] = useState(false);
@@ -28,29 +28,29 @@ const HeaderMobile = ({visi, setVisi, toggleVisi}) => {
 
   return (
     <div className={classCss.HeaderMobile}>
-        <div className={mobClassCss.HeaderMobileBurger}  onClick={toggleVisi}>
-          <span className={mobClassCss.HeaderMobileBtn}></span>
-        </div>
-        <Logo theme='M'/>
-        <div onClick={toggleBtn}>
-          <Search/>
-        </div>
-        <div className={rootClass.join(' ')}>
-          <SearchInput 
-            setVisi={setVisiMob} 
-            search={search}
-            setSearch={setSearch}
-          />
-          <SearchBtn search={search} setSearch={setSearch} value={search}/>
-          <SortArrWindow visi={visiMob} sortedProduct={sortedProduct} setSearch={setSearch}/>
-        </div>
-        {
-          btnVisi
-          ?
-          <div className={mobClassCss.BtnDarkFon}></div>
-          :
-          <></>
-        }
+      <div className={mobClassCss.HeaderMobileBurger}  onClick={toggleVisi}>
+        <span className={mobClassCss.HeaderMobileBtn}></span>
+      </div>
+      <Logo theme='M'/>
+      <div onClick={toggleBtn}>
+        <Search/>
+      </div>
+      <div className={rootClass.join(' ')}>
+        <SearchInput 
+          setVisi={setVisiMob} 
+          search={search}
+          setSearch={setSearch}
+        />
+        <SearchBtn search={search} setSearch={setSearch} value={search}/>
+        <SortArrWindow visi={visiMob} sortedProduct={sortedProduct} setSearch={setSearch}/>
+      </div>
+      {
+        !btnVisi
+        ?
+        <></>
+        :
+        <div className={mobClassCss.BtnDarkFon}></div>
+      }
     </div>
   )
 }

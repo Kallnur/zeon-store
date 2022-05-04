@@ -8,12 +8,14 @@ import GetServ from '../../components/API/GetServ';
 import { getTotalPages } from '../../utils/allFunc';
 import { useDispatch } from 'react-redux';
 import { addCrumb } from '../../store/breadcrumb';
+import MobBlockProduct from '../../components/BlockProduct/MobBlockProduct';
 
 const CollectionProduct = ({route}) => {
 
+    let limitCol = window.innerWidth <= 425 ? 4 : 12;
     const [productQuer, setProductQuer] = useState({
         totalPages: 0,
-        limit: 12,
+        limit: limitCol,
         page: 1
     })
     let {id} = useParams();
@@ -57,7 +59,17 @@ const CollectionProduct = ({route}) => {
                 page={productQuer.page}
                 toggle={togglePage}
             />
-            <BlockProduct col={5} title={"Новинки"}/>
+            {
+                window.innerWidth <= 425
+                ?
+                <div>
+                  <MobBlockProduct col={5} title={"Новинки"}/>
+                </div>
+                :
+                <div>
+                  <BlockProduct col={5} title={"Новинки"}/>
+                </div>
+              }
         </div>        
     </div>
     </>

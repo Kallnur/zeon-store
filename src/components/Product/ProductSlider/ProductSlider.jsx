@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Scrollbar } from 'swiper';
 import 'swiper/css/scrollbar';
@@ -7,7 +7,9 @@ import 'swiper/css/lazy'
 
 const ProductSlider = ({urls}) => {
 
-  return (
+    // const slide = useRef()
+
+    return (
     <div className="product-img">
         {
             urls.length === 1
@@ -21,6 +23,7 @@ const ProductSlider = ({urls}) => {
                 scrollbar={{ draggable: true }}
                 autoplay={{delay: 2500, disableOnInteraction: false}}
                 speed={800}
+                // ref={slide}
             >
             {
                 urls.map((url, i) => 

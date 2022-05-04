@@ -26,9 +26,9 @@
     width: 90%;
     left: 50%;
     transform: translateX(-50%);
-    bottom: -100%;
+    bottom: -70px;
     border: 1px solid #E0E0E0;
-    height: 48px;
+    height: 55px;
     justify-content: space-between;
     align-items: center;
     padding: 5px 15px;
@@ -54,5 +54,5 @@
     right: 0;
     bottom: 0;
     background: rgba(0, 0, 0, 0.2);
-    z-index: 1010;
+    z-index: -1;
 }

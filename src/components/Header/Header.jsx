@@ -18,10 +18,12 @@ const Header = () => {
     if(visi) {
       rootClass.push(classCss.DarkFon);
       // document.body.style.overflow = 'hidden';
-    }else document.body.style.overflow = 'scrool';
+    }
   }
 
   return (
+    <>
+    <div className={rootClass}  onClick={toggleVisi}></div>
     <header className={classCss.Header}>
       <div className="container">
         <div className={classCss.HeaderBody}>
@@ -29,21 +31,15 @@ const Header = () => {
             <HeaderNavbar/>
             <HeaderLogo/>
           </div>
-          {
-            window.innerWidth <= 425
-            ?
             <div className={classCss.HeaderMobile}>
-              <div className={rootClass}  onClick={toggleVisi}></div>
+              <HeaderMobile toggleVisi={toggleVisi}/>
               <HeaderMenu visi={visi} setVisi={setVisi} toggleVisi={toggleVisi}/>
-              <HeaderMobile visi={visi} setVisi={setVisi} toggleVisi={toggleVisi}/>
             </div>
-            :
-            <></>
-          }
         </div>
         <Breadcrumb crumb={crumb}/>
       </div>
     </header>
+    </>
   )
 }
 

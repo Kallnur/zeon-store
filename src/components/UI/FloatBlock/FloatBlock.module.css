@@ -9,6 +9,7 @@
     align-items: center;
     gap: 2rem;
     animation: floatBlock 3s infinite linear;
+    z-index: 2000;
 }
 
 .FloatLinkBlock{

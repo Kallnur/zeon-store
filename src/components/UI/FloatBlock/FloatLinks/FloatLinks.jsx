@@ -7,7 +7,7 @@ const FloatLinks = ({info, setVisi}) => {
         {
             !info.link 
             ?
-            <span onClick={() => setVisi(true)}>
+            <span onClick={() => setVisi ? setVisi(true) : null}>
                 <img src={info.url} alt="Icon" />
             </span>
             :

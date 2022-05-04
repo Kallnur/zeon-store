@@ -11,17 +11,41 @@ const News = () => {
   const [news, setNews] = useState([])
   const dispatch = useDispatch();
   const crumb = [{txt: 'Главная ', href: '/'},{txt:'Новости  ', href: '/news'}]
+  const [curPage, setCurPage] = useState(1);
+  const [getNew, setGetNew]   = useState(true);
+  const [totalCount] = useState(50);
 
-  const getNews = async () => {
-    const response = await GetServ.getNews(5,1);
-    setNews(response.data)
-    console.log(response.data)
-  }
+  const scrollGet = (e) => {
+
+    let scroll = e.target.documentElement.scrollTop,
+        height = window.innerHeight,
+        scHei  = e.target.documentElement.scrollHeight;
+
+    if(scHei - (scroll + height) < 444 && news.length < totalCount){
+      console.log('scroll');
+      setGetNew(true)
+    }
+  };
 
   useEffect(() => {
-    getNews()
+    if(getNew){
+      console.log('getNew');
+      GetServ.getNews(5, curPage).then(response => {
+        setNews([...news, ...response.data])
+        console.log('new news', totalCount);
+        setCurPage(curPage + 1)
+      }).finally(() => setGetNew(false))      
+    }
+  }, [getNew])
+
+  useEffect(() => {
     dispatch(toogleCrumb(crumb))
     window.scrollTo({ top: 0, behavior: 'smooth' })
+    document.addEventListener('scroll', scrollGet)
+
+    return () => {
+      document.removeEventListener('scroll', scrollGet);
+    }
   }, [])
 
   return (
@@ -34,8 +58,8 @@ const News = () => {
             ?
             <h1>News not found</h1>
             :
-            news.map(obj => 
-              <NewsBlock key={obj.id} info={obj}/>
+            news.map((obj, i) => 
+              <NewsBlock key={obj.id + i * Math.random()} info={obj}/>
             )
           }
         </div>

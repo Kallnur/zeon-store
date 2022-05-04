@@ -9,19 +9,15 @@ import { toogleCrumb } from '../../store/breadcrumb';
 
 const Collection = () => {
 
-  const [pageCollection, setPageCollection] = useState({
-    totalPages: 0,
-    limit: 8,
-    page: 1
-  });
   const dispatch = useDispatch();
   const crumb = [{txt: 'Главная ', href: '/'},{txt:'Коллекции', href: '/collection'}]
+  let limitCol = window.innerWidth <= 425 ? 4 : 8;
 
-  useEffect(() => {  
-    getTotalPages(pageCollection, setPageCollection, GetServ.GetCollection(8,1))  // -_-
-    window.scrollTo({ top: 80 });
-  }, [pageCollection.page])
-
+  const [pageCollection, setPageCollection] = useState({
+    totalPages: 0,
+    limit: limitCol,
+    page: 1
+  });
   const togglePage = (page) => {
     setPageCollection({...pageCollection, page: page})
   }
@@ -31,7 +27,10 @@ const Collection = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }, [])
 
-  console.log(pageCollection.page)
+  useEffect(() => {  
+    getTotalPages(pageCollection, setPageCollection, GetServ.GetCollection(8,1))  // -_-
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }, [pageCollection.page])
 
   return (
     <div className={classCss.Collection}>

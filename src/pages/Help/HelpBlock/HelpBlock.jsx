@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import { Left } from '../../../components/Icons/Icons'
 import classCss from '../Help.module.css'
 

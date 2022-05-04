@@ -62,7 +62,7 @@ const ModalOrder = ({done, setDone}) => {
                   <label className={classCss.CheckBox}>
                     <input type="checkbox" {...register('check', {required: true})}/>
                     <div className={classCss.CheckBoxMark}><Mark className={classCss.Mark}/></div>
-                    <span>Согласен с условиями <Link to="/offer">публичной оферты</Link></span>
+                    <span>Согласен с условиями <Link target={'_blank'} to="/offer">публичной оферты</Link></span>
                   </label>
                     <ButtonPost 
                       type='submit' 
