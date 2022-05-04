@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Logo from '../../Logo/Logo'
 import { SearchBtn, SearchInput } from '../HeaderLogo/HeaderLogo'
 import classCss from '../Header.module.css'
@@ -18,13 +18,16 @@ const HeaderMobile = ({toggleVisi}) => {
     e.stopPropagation();
     setBtnVisi(!btnVisi);
   };
-  document.body.onclick = () => {setVisiMob(false); setBtnVisi(false)};
+  const tgle = () => {setVisiMob(false); setBtnVisi(false)};
 
   const rootClass = [mobClassCss.HeaderInputBlock];
 
   if(btnVisi) rootClass.push(mobClassCss.HeaderInputBlockActive)
 
-  console.log(rootClass);
+  // useEffect(() => {
+  //   document.addEventListener('click', tgle);
+  //   return document.removeEventListener('click', tgle)
+  // }, [])
 
   return (
     <div className={classCss.HeaderMobile}>
@@ -42,7 +45,7 @@ const HeaderMobile = ({toggleVisi}) => {
           setSearch={setSearch}
         />
         <SearchBtn search={search} setSearch={setSearch} value={search}/>
-        <SortArrWindow visi={visiMob} sortedProduct={sortedProduct} setSearch={setSearch}/>
+        <SortArrWindow visi={visiMob} sortedProduct={sortedProduct} setVisi={setVisiMob} setSearch={setSearch} tgle={tgle}/>
       </div>
       {
         !btnVisi

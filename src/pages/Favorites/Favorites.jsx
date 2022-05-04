@@ -80,7 +80,6 @@ const Favorits = () => {
             </>
           }          
         </div>
-
       </div>
     </div>
   )

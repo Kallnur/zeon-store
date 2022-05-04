@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
 import {Busket, Heart, Search} from '../../Icons/Icons';
 import { useSelector } from 'react-redux';
@@ -24,8 +24,9 @@ export const SearchInput = ({setVisi, search, setSearch}) => {
         />
     )
 }
-export const SearchBtn = ({search, setSearch, value}) => {
+export const SearchBtn = ({search, setSearch, value, setVisi}) => {
     const checkValue = (e) => {
+        // setVisi(false);
         if(value.length < 3) e.preventDefault()
             else setSearch('');
     }
@@ -65,7 +66,8 @@ const HeaderLogo = () => {
 
     const sortedProduct = useSelector(state => state.searchSort.searchSort)
     const [visi, setVisi] = useState(false)
-    document.body.onclick = () => setVisi(false)
+    const tgle = () => setVisi(false);
+
     return (
         <div className={classCss.HeaderLogo}>
                 <Logo theme='def'/>
@@ -75,8 +77,8 @@ const HeaderLogo = () => {
                     search={search}
                     setSearch={setSearch}
                 />
-                <SearchBtn search={search} setSearch={setSearch} value={search}/>
-                <SortArrWindow visi={visi} sortedProduct={sortedProduct} setSearch={setSearch}/>
+                <SearchBtn setVisi={setVisi} search={search} setSearch={setSearch} value={search}/>
+                <SortArrWindow visi={visi} setVisi={setVisi} tgle={tgle} sortedProduct={sortedProduct} setSearch={setSearch}/>
             </div>
             <BasFav/>
         </div>

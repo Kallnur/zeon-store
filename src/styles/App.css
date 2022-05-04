@@ -67,20 +67,6 @@ ul, ol{
   transition: all 500ms ease-in;
   transform: translateX(100%);
 }
-.basketTransitiom-enter {
-  opacity: 0;
-}
-.basketTransitiom-enter-active {
-  opacity: 1;
-  transition: opacity 500ms ease-in;
-}
-.basketTransitiom-exit {
-  opacity: 1;
-}
-.basketTransitiom-exit-active {
-  opacity: 0;
-  transition: opacity 500ms ease-in;
-}
 
 .homeMobSwiper{height: initial !important;}
 

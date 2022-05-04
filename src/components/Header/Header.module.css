@@ -2,7 +2,6 @@
     position: relative;
     width: 100%;
     background: #fff;
-    overflow: hidden;
 }
 
 .HeaderDesk{
@@ -44,7 +43,7 @@
 .HeaderLogo::before{
     position: absolute;
     content: '';
-    width: 100vw;
+    width: 99vw;
     height: 140%;
     top: -20%;
     left: -9%;

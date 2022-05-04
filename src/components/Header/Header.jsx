@@ -23,7 +23,6 @@ const Header = () => {
 
   return (
     <>
-    <div className={rootClass}  onClick={toggleVisi}></div>
     <header className={classCss.Header}>
       <div className="container">
         <div className={classCss.HeaderBody}>
@@ -34,6 +33,7 @@ const Header = () => {
             <div className={classCss.HeaderMobile}>
               <HeaderMobile toggleVisi={toggleVisi}/>
               <HeaderMenu visi={visi} setVisi={setVisi} toggleVisi={toggleVisi}/>
+              <div className={rootClass}  onClick={toggleVisi}></div>
             </div>
         </div>
         <Breadcrumb crumb={crumb}/>

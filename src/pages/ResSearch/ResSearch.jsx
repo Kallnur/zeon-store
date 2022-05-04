@@ -21,12 +21,9 @@ const ResSearch = () => {
    const paginationIn = usePagination(),
          {totalPage, RPage, lastInd, firstInd} = paginationIn(searchProduct, page, 8)
 
-   console.log(totalPage, RPage, lastInd, firstInd)
-
    const searchSorting = () => {
       const res = products.filter(obj => obj.collection.toLowerCase().includes(id.toLowerCase())  )
       setSearchProduct(res)
-      console.log(res, searchProduct, products)
    }
 
    const togglePage = (page) => {setPage(page)};
@@ -67,11 +64,11 @@ const ResSearch = () => {
                )}
             </div>
             {
-               // totalPage > 1
-               // ?
+               totalPage > 1
+               ?
                <Pagination totalBullet={totalPage} page={RPage} toggle={togglePage}/>
-               // :
-               // <></>
+               :
+               <></>
             }
             </>
             }
