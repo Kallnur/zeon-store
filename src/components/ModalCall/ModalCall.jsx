@@ -59,18 +59,14 @@ const ModalCall = ({done}) => {
                     />
                 </div>
                 {
-                    !btnActive
-                    ?
-                    <ButtonPost disabled style={{background: "#777776"}}>
-                        Заказать звонок
-                    </ButtonPost>
-                    :
                     <ButtonPost 
+                        disabled={!btnActive}
+                        data-active={btnActive}
                         onClick={(e) => {
                             postUserInfo(e)
                             done(true)
                         }} 
-                        style={{background: "#1D1D1B"}}
+
                     >
                         Заказать звонок
                     </ButtonPost>

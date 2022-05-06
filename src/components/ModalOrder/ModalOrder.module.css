@@ -57,7 +57,7 @@
 
 .CheckBox input:checked + .CheckBoxMark{background: #393939;}
 
-.ModalFormBody > button{background-color: #1D1D1B;}
+/* .ModalFormBody > button{background-color: #1D1D1B;} */
 
 .ModalErr{ color: #E5271B !important; }
 .ModalErr > input{ border: 1px solid #E5271B !important; }

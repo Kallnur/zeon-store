@@ -6,7 +6,7 @@ export default function usePagination(){
             lastInd   = col * RPage,
             firstInd  = lastInd - col; 
   
-        return{totalPage, RPage, lastInd, firstInd};
+      return{totalPage, RPage, lastInd, firstInd};
     }
 
     return paginationIn;

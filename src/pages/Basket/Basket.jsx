@@ -28,7 +28,7 @@ const Basket = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }, [])
   useEffect(() => {
-    setDone(false); dispatch(toogleCrumb(crumb)); 
+     dispatch(toogleCrumb(crumb)); 
   }, [products])
 
   return (
@@ -65,7 +65,7 @@ const Basket = () => {
     <ModalWin visi={modalVisi} setVisi={setModalVisi}>
       {!done
       ?
-      <ModalOrder done={done} setDone={setDone} />
+      <ModalOrder done={done} setDone={setDone} setModalVisi={setModalVisi} />
       :
       <ModalDone setVisi={setModalVisi}/>
       }

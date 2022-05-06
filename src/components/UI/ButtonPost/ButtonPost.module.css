@@ -13,9 +13,13 @@
     font-weight: 500;
     overflow: hidden;
     z-index: 1;
+    background: #777776;
+}
+.ButtonPostActive{
+    background: #1D1D1B;
 }
 
-.ButtonPost::before{
+.ButtonPostActive::before{
     position: absolute;
     content: '';
     background: #714c4c;
@@ -32,10 +36,10 @@
     color: #fff;
     z-index: 20;
 }
-.ButtonPost:hover::before{
+.ButtonPostActive:hover::before{
     left: 0;
 }
 
-.ButtonPost:hover{
+.ButtonPostActive:hover{
     box-shadow: inset 0 0 8px #714c4c;
 }

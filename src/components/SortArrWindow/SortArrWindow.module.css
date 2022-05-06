@@ -10,9 +10,9 @@
     border-radius: 3px;
     border: inherit;
     display: none;
-    z-index: 1000;
     overflow-y: scroll;
     padding: 0;
+    z-index: 1000;
 }
 .ListActive{display: flex;}
 .Item{
@@ -22,6 +22,7 @@
     height: 60px;
     cursor: pointer;
     border-bottom: 1px solid #EEEEEE;
+    z-index: 1000;
 }
 .Item:hover{
     background: #eee;

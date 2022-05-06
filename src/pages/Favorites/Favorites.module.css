@@ -1,5 +1,6 @@
 .Favorites{
     padding-bottom: 2rem;
+    z-index: -1;
 }
 .JcFs{
     justify-content: start;

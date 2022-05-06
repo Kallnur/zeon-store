@@ -36,10 +36,13 @@ const basket = createSlice({
         },
         addOrder(state, action) {
             state.order = action.payload
+        },
+        clearBasket(state, action) {
+            state.basket = [];
         }
     }
 })
 
-export const {addToBusket, removeToBasket, incBasketAmount, decBasketAmount} = basket.actions
+export const {addToBusket, removeToBasket, incBasketAmount, decBasketAmount, clearBasket} = basket.actions
 
 export default basket.reducer

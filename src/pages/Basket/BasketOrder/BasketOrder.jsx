@@ -41,7 +41,7 @@ const BasketOrder = ({products, mVisi, setMVisi}) => {
           }  рублей</span>
         </div>
         <button onClick={toggleVisi} className={classCss.BasketOrderVisiBtn} >{visiBtn}</button>
-        <button onClick={() => {setMVisi(!mVisi)}} className={classCss.BasketOrderBtn}>
+        <button onClick={() => {setMVisi(true)}} className={classCss.BasketOrderBtn}>
           Оформить заказ
         </button>
     </div>

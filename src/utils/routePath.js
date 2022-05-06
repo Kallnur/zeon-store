@@ -1,0 +1,12 @@
+export const HOME   = '/',
+      ABOUT_US      = '/about-us',
+      COLLECTION    = '/collection',
+      COLLECTION_ID = '/collection/:id',
+      NEWS          = '/news',
+      FAVORITES     = '/favorites',
+      BASKET        = '/basket',
+      HELP          = '/help',
+      OFFER         = '/offer',
+      SEARCH_RESULT = '/res-search/:id',
+      PRODUCT_ID    = '/product/:id',
+      NOT_FOUND     = '*'

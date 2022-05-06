@@ -8,16 +8,18 @@ import classCss from './ModalOrder.module.css' ;
 import PhoneInput from 'react-phone-number-input';
 import 'react-phone-number-input/style.css';
 import axios from 'axios';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { allPrice, amountLines, amountProduct } from '../../utils/calcBasket';
+import { clearBasket } from '../../store/basket';
 
-const ModalOrder = ({done, setDone}) => {
+const ModalOrder = ({done, setDone, setModalVisi}) => {
 
   const [phoneValue, setPhoneValue] = useState('')
 
-  const { register, formState:{errors, isValid}, handleSubmit, reset} = useForm({mode: 'onBlur'});
+  const { register, formState:{errors, isValid}, handleSubmit, reset} = useForm({mode: 'onChange'});
 
   const products = useSelector(state => state.basket.basket)
+  const dispatch = useDispatch();
 
   const onSubmit = data => {
     const product = {
@@ -27,8 +29,12 @@ const ModalOrder = ({done, setDone}) => {
       allPrice: allPrice(products)
     }
     axios.post('http://localhost:3003/order', {infoUser: {...data, phone: phoneValue}, infoProduct: product})
-    done ? setDone(!done) : setDone(!done)
+
     reset();
+    setDone(true)
+    dispatch(clearBasket());
+    // if(!done) setModalVisi(false)
+    // setModalVisi(false)
   }
 
   return (
@@ -50,7 +56,7 @@ const ModalOrder = ({done, setDone}) => {
                     errors={errors} placeholder='example@mail.com' type={'email'} errName={errors?.email}
                   />
                   <PhoneInput name={'phone'} required placeholder="Введите номер телефона" 
-                    value={phoneValue} onChange={setPhoneValue}/>
+                    value={phoneValue} minLength={9} onChange={setPhoneValue}/>
                   <InputOrder 
                     classCss={classCss} label='Страна' name='country' register={register} 
                     errors={errors} placeholder='Введите страну' errName={errors?.country}
@@ -67,7 +73,7 @@ const ModalOrder = ({done, setDone}) => {
                     <ButtonPost 
                       type='submit' 
                       disabled={!isValid}
-                      style={isValid ? {background: '#1D1D1B'} : {background: '#777776'}}
+                      data-active={isValid}
                       >
                       Заказать
                     </ButtonPost>

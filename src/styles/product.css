@@ -138,6 +138,7 @@
     width: 100%;
     justify-content: space-between;
     align-items: center;
+    z-index: 1;
 }
 
 .new-product-group{
@@ -163,7 +164,11 @@
 .product-img .swiper-scrollbar{background: transparent;}
 .product-img .swiper-scrollbar-drag{background: #fff;}
 
+.swiper-slide{z-index: -1 !important;}
+
 @media screen and (max-width: 425px) {
     .product-body{width: 100%;}
     .new-product-group{flex-wrap: wrap;}
+    .product-like svg:nth-child(1){opacity: 1;}
+    /* .product-like:hover .redHeart{opacity: 0;} */
 }
