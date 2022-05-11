@@ -7,7 +7,7 @@ import PageTitle from '../../components/PageTitle/PageTitle'
 import Pagination from '../../components/Pagination/Pagination';
 import Product from '../../components/Product/Product';
 import usePagination from '../../hooks/usePagination';
-import { toogleCrumb } from '../../store/breadcrumb';
+import { toogleCrumb } from '../../store/reducers/breadcrumb';
 import classCss from './ResSearch.module.css'
 
 const ResSearch = () => {

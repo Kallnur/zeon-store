@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Logo from '../../Logo/Logo'
-import { SearchBtn, SearchInput } from '../HeaderLogo/HeaderLogo'
+import { SearchBtn, SearchInput } from '../HeaderComponents/HeaderComponents'
 import classCss from '../Header.module.css'
 import mobClassCss from './HeaderMobile.module.css'
 import SortArrWindow from '../../SortArrWindow/SortArrWindow'
@@ -23,11 +23,6 @@ const HeaderMobile = ({toggleVisi}) => {
   const rootClass = [mobClassCss.HeaderInputBlock];
 
   if(btnVisi) rootClass.push(mobClassCss.HeaderInputBlockActive)
-
-  // useEffect(() => {
-  //   document.addEventListener('click', tgle);
-  //   return document.removeEventListener('click', tgle)
-  // }, [])
 
   return (
     <div className={classCss.HeaderMobile}>

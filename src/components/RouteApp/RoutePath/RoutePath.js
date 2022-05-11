@@ -4,13 +4,14 @@ import Collection from "../../../pages/Collection/Collection"
 import CollectionProduct from "../../../pages/CollectionProduct/CollectionProduct"
 import Favorits from "../../../pages/Favorites/Favorites"
 import Help from "../../../pages/Help/Help"
+import HistoryOrder from "../../../pages/HistoryOrder/HistoryOrder"
 import Home from "../../../pages/Home/Home"
 import News from "../../../pages/News/News"
 import PageNotFound from "../../../pages/PageNotFound/PageNotFound"
 import ProductPage from "../../../pages/ProductPage/ProductPage"
 import PublicOffer from "../../../pages/PublicOffer/PublicOffer"
 import ResSearch from "../../../pages/ResSearch/ResSearch"
-import { ABOUT_US, BASKET, COLLECTION, COLLECTION_ID, FAVORITES, HELP, HOME, NEWS, NOT_FOUND, OFFER, PRODUCT_ID, SEARCH_RESULT } from "../../../utils/routePath"
+import { ABOUT_US, BASKET, COLLECTION, COLLECTION_ID, FAVORITES, HELP, HISTORY_ORDER, HOME, NEWS, NOT_FOUND, OFFER, PRODUCT_ID, SEARCH_RESULT } from "../../../utils/routePath"
 
 export const PubRoute = [
     {
@@ -63,5 +64,9 @@ export const PriRoute = [
     {
         path: BASKET,
         component:<Basket/>
+    },
+    {
+        path: HISTORY_ORDER,
+        component:<HistoryOrder/>
     }
 ]

@@ -7,8 +7,6 @@ const ButtonPost = ({children, ...props}) => {
 
   if(props['data-active']) rootClass.push(classCss.ButtonPostActive);
 
-  console.log(props['data-active']);
-
   return (
     <button className={rootClass.join(' ')} {...props}>
       <span>{children}</span>

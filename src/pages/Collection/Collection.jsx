@@ -5,7 +5,7 @@ import CollectionGrop from '../../components/CollectionGroup/CollectionGroup'
 import Pagination from '../../components/Pagination/Pagination';
 import {getTotalPages } from '../../utils/allFunc';
 import classCss from './Collection.module.css';
-import { toogleCrumb } from '../../store/breadcrumb';
+import { toogleCrumb } from '../../store/reducers/breadcrumb';
 
 const Collection = () => {
 

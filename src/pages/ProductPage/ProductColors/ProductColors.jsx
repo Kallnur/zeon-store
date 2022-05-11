@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import classCss from '../ProductPage.module.css'
-import {productUpdateColor} from '../../../store/product'
+import {productUpdateColor} from '../../../store/reducers/product'
 
 const ProductColors = ({info}) => {
 

@@ -18,8 +18,6 @@ const HomeProduct = ({ Limit, Page, title, fuse }) => {
     }
   };
 
-  console.log(dress)
-
   useEffect(() => {
     getProduct();
   }, []);

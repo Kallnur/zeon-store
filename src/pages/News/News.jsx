@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import { useDispatch } from 'react-redux'
 import GetServ from '../../components/API/GetServ'
+import Loader from '../../components/Loader/Loader'
 import PageTitle from '../../components/PageTitle/PageTitle'
-import { toogleCrumb } from '../../store/breadcrumb'
+import { toogleCrumb } from '../../store/reducers/breadcrumb'
 import classCss from './News.module.css'
 import NewsBlock from './NewsBlock/NewsBlock'
 
@@ -15,13 +16,16 @@ const News = () => {
   const [getNew, setGetNew]   = useState(true);
   const [totalCount] = useState(50);
 
+  let newsPoint = 444;
+  if(window.innerWidth <= 425) newsPoint = 777;
+
   const scrollGet = (e) => {
 
     let scroll = e.target.documentElement.scrollTop,
         height = window.innerHeight,
         scHei  = e.target.documentElement.scrollHeight;
 
-    if(scHei - (scroll + height) < 444 && news.length < totalCount){
+    if(scHei - (scroll + height) < newsPoint && news.length < totalCount){
       console.log('scroll');
       setGetNew(true)
     }
@@ -56,7 +60,7 @@ const News = () => {
           {
             !news.length
             ?
-            <h1>News not found</h1>
+            <Loader/>
             :
             news.map((obj, i) => 
               <NewsBlock key={obj.id + i * Math.random()} info={obj}/>

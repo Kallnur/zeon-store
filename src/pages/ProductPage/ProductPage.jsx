@@ -1,13 +1,14 @@
-import React, { useEffect, useMemo, useState } from 'react'
+import React, { useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import { useDispatch, useSelector  } from 'react-redux';
 import classCss from './ProductPage.module.css'
 import ProductPageDesc from './ProductPageDesc/ProductPageDesc';
 import ProductPageImages from './ProductPageImages/ProductPageImages';
 import BlockProduct from '../../components/BlockProduct/BlockProduct';
-import { getProducts } from '../../store/product';
+import { getProducts } from '../../store/reducers/product';
 import MobBlockProduct from '../../components/BlockProduct/MobBlockProduct'
-import { addCrumb } from '../../store/breadcrumb';
+import { addCrumb } from '../../store/reducers/breadcrumb';
+import Loader from '../../components/Loader/Loader';
 
 const ProductPage = () => {
 
@@ -18,7 +19,6 @@ const ProductPage = () => {
     if(product.length) crumb = () => {return {txt: product[0].collection, href: '/product/:id'}};
     // console.log(crumb());
     
-
     useEffect( () => { 
         dispatch(getProducts(id)); 
         if(crumb) dispatch(addCrumb(crumb()));
@@ -37,7 +37,7 @@ const ProductPage = () => {
             !product.length
             ?
             <>
-            <h1>Product not found</h1>
+            <Loader/>
             </>
             :
             <>

@@ -13,7 +13,6 @@ const MobCollectionGroup = ({getBtn, Limit, Page, fuse}) => {
         if(collections.length < fuse){
             const respone = await GetServ.GetCollection(limit, page);
             setCollections([...collections, ...respone.data])
-            console.log(collections, respone.data)
         }
     }
 

@@ -4,7 +4,8 @@ import classCss from './Help.module.css'
 import PageTitle from '../../components/PageTitle/PageTitle'
 import HelpBlock from './HelpBlock/HelpBlock';
 import { useDispatch } from 'react-redux';
-import { toogleCrumb } from '../../store/breadcrumb';
+import { toogleCrumb } from '../../store/reducers/breadcrumb';
+import Loader from '../../components/Loader/Loader';
 
 const Help = () => {
 
@@ -28,7 +29,7 @@ const Help = () => {
       <div className='container'>
         <div className={classCss.HelpBody}>
           <div className={classCss.HelpImg}>
-            <img src="https://imagizer.imageshack.com/img923/2632/yWB7S5.jpg" alt="Img" />
+            <img src="https://firebasestorage.googleapis.com/v0/b/zeon-store-8ad28.appspot.com/o/Fscetch.jpg?alt=media&token=c5a45e72-cc42-4cdb-8bd4-3272a0f9842a" alt="Img" />
           </div>
           <div className={classCss.HelpGroupBlock}>
             <PageTitle title={"Помощь"}/>
@@ -36,7 +37,7 @@ const Help = () => {
               {
                 !helpInfo.length
                 ?
-                <h1>Help info not found</h1>
+                <Loader/>
                 :
                 helpInfo.map((obj, i) =>
                   <HelpBlock key={Math.random() * i} info={obj}/>  

@@ -39,10 +39,21 @@ const basket = createSlice({
         },
         clearBasket(state, action) {
             state.basket = [];
+        },
+        fillBasket(state, action){
+            if(action.payload){
+                console.log(action.payload);
+                state.basket = action.payload.map(obj => {
+                    const temp = obj.product.colors.filter(color => color.available === false)
+                    const product = {...obj.product, basket: 1, color: temp[0], 
+                        basketCode: action.payload.id * Date.now()}
+                    return product;
+                })
+            }
         }
     }
 })
 
-export const {addToBusket, removeToBasket, incBasketAmount, decBasketAmount, clearBasket} = basket.actions
+export const {addToBusket, removeToBasket, incBasketAmount, decBasketAmount, clearBasket, fillBasket} = basket.actions
 
 export default basket.reducer

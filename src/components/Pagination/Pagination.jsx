@@ -5,8 +5,6 @@ import classCss from './Pagination.module.css'
 
 const Pagination = ({totalBullet, page, toggle}) => {
 
-    console.log(totalBullet, page, toggle);
-
     const totalPages = totalPagBullet(totalBullet);
     const next = () => {if(page < totalBullet) toggle(page += 1)};
 

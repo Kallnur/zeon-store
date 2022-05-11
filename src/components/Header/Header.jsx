@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import classCss from './Header.module.css';
 import HeaderLogo from './HeaderLogo/HeaderLogo';
-import HeaderMenu from './HeaderMenu/HeaderMenu';
+import HeaderMobMenu from './HeaderMobMenu/HeaderMobMenu';
 import HeaderMobile from './HeaderMobile/HeaderMobile';
 import HeaderNavbar from './HeaderNavbar/HeaderNavbar';
 import Breadcrumb from '../Breadcrumb/Breadcrumb';
@@ -15,10 +15,7 @@ const Header = () => {
   const toggleVisi = () => setVisi(!visi)
 
   if(window.innerWidth <= 425){
-    if(visi) {
-      rootClass.push(classCss.DarkFon);
-      // document.body.style.overflow = 'hidden';
-    }
+    if(visi) rootClass.push(classCss.DarkFon);
   }
 
   return (
@@ -32,7 +29,7 @@ const Header = () => {
           </div>
             <div className={classCss.HeaderMobile}>
               <HeaderMobile toggleVisi={toggleVisi}/>
-              <HeaderMenu visi={visi} setVisi={setVisi} toggleVisi={toggleVisi}/>
+              <HeaderMobMenu visi={visi} setVisi={setVisi} toggleVisi={toggleVisi}/>
               <div className={rootClass}  onClick={toggleVisi}></div>
             </div>
         </div>

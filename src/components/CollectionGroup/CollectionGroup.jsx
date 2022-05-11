@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import GetServ from '../API/GetServ'
 import Collection from '../Collection/Collection';
+import Loader from '../Loader/Loader';
 import ButtonGet from '../UI/ButtonGet/ButtonGet';
 
 const CollectionGroup = ({getBtn, Limit, Page, fuse, toggle = false, timeout}) => {
@@ -13,7 +14,6 @@ const CollectionGroup = ({getBtn, Limit, Page, fuse, toggle = false, timeout}) =
             const respone = await GetServ.GetCollection(limit, page);
             if(toggle) setCollections(respone.data)
                 else setCollections([...collections, ...respone.data])
-            console.log(collections, respone.data)
         }
     }
 
@@ -26,7 +26,7 @@ const CollectionGroup = ({getBtn, Limit, Page, fuse, toggle = false, timeout}) =
         {
             !collections.length
             ?
-            <h1 className='collection-not'>Collections not found</h1>
+            <Loader/>
             :
             <TransitionGroup className='collection-group'>
                 {collections.map((col, i) => 

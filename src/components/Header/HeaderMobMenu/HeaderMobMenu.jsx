@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from 'react'
-import {HeaderTel, Headlist} from '../HeaderNavbar/HeaderNavbar'
 import classCss from '../Header.module.css'
-import { BasFav } from '../HeaderLogo/HeaderLogo'
+import { BasFav, HeaderTel, Headlist } from '../HeaderComponents/HeaderComponents'
 import { Close } from '../../Icons/Icons'
 import FloatLinks from '../../UI/FloatBlock/FloatLinks/FloatLinks'
 import GetServ from '../../API/GetServ'
 
-const HeaderMenu = ({visi, modalVisi, toggleVisi, setModalVisi}) => {
+const HeaderMobMenu = ({visi, modalVisi, toggleVisi, setModalVisi}) => {
     const [floatIn, setFloatIn] = useState([])
 
     const rootClass = [classCss.HeaderMenu];
@@ -53,4 +52,4 @@ const HeaderMenu = ({visi, modalVisi, toggleVisi, setModalVisi}) => {
     )
 }
 
-export default HeaderMenu
+export default HeaderMobMenu

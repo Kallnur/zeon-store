@@ -9,7 +9,14 @@ import PageTitle from '../../components/PageTitle/PageTitle'
 import ModalWin from '../../components/UI/ModalWin/ModalWin'
 import ModalOrder from '../../components/ModalOrder/ModalOrder'
 import ModalDone from '../../components/ModalDone/ModalDone'
-import { toogleCrumb } from '../../store/breadcrumb'
+import { toogleCrumb } from '../../store/reducers/breadcrumb'
+
+export const BasketLength = () => {
+  const products = useSelector(state => state.basket.basket)
+  return(
+    <span> {products.length}</span>
+  )
+}
 
 const Basket = () => {
 
@@ -26,10 +33,8 @@ const Basket = () => {
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' })
+    dispatch(toogleCrumb(crumb)); 
   }, [])
-  useEffect(() => {
-     dispatch(toogleCrumb(crumb)); 
-  }, [products])
 
   return (
     <>

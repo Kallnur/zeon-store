@@ -14,10 +14,13 @@ const favorite = createSlice({
                 if(obj.id === action.payload.id) obj.favorite = false
                 return obj.id !== action.payload.id
             })
+        },
+        fillFavorite(state, action) {
+            if(action.payload) state.favorite = action.payload.map(obj => obj.product);
         }
     }
 })
 
-export const {addToFavorite, removeToFavorite} = favorite.actions
+export const {addToFavorite, removeToFavorite, fillFavorite} = favorite.actions
 
 export default favorite.reducer

@@ -4,10 +4,12 @@
     justify-content: space-between;
     flex-wrap: wrap;
     row-gap: 1rem;
+    z-index: 1;
 }
 .collection{
     width: 24.4%;
     height: initial;
+    z-index: 1;
 }
 .collection-body{
     position: relative;

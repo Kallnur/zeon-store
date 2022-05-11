@@ -7,8 +7,9 @@ import BlockProduct from '../../components/BlockProduct/BlockProduct';
 import GetServ from '../../components/API/GetServ';
 import { getTotalPages } from '../../utils/allFunc';
 import { useDispatch } from 'react-redux';
-import { addCrumb } from '../../store/breadcrumb';
+import { addCrumb } from '../../store/reducers/breadcrumb';
 import MobBlockProduct from '../../components/BlockProduct/MobBlockProduct';
+import Loader from '../../components/Loader/Loader';
 
 const CollectionProduct = ({route}) => {
 
@@ -47,7 +48,7 @@ const CollectionProduct = ({route}) => {
                 {
                     !products.length
                     ?
-                    <h1>Product not found</h1>
+                    <Loader/>
                     :
                     products.map(obj => 
                         <Product key={obj.id * Math.random()} info={obj}/>    

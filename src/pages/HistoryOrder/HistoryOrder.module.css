@@ -1,0 +1,48 @@
+.HistoryOrder{padding: 1rem 0;}
+.OrderList{
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.2rem;
+    padding-bottom: 1rem;
+}
+.OrderItem span:nth-child(1){color: #4d4d4d;}
+.OrderItem{
+    font-size: 1.05rem;
+    letter-spacing: .4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.OrderItem span{font-weight: 400;}
+.OrderItem span:nth-child(2){color: #393939; font-weight: 500;}
+
+.HistoryOrderBody{
+    background: #fff;
+    padding: 1.5rem 2rem 3rem;
+}
+
+.HistoryBlock{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1.5rem;
+    border-bottom: 1px solid #9c9c9c;
+    margin-bottom: 1rem;
+}
+
+.HistoryBlock h2{width: 100%;}
+
+.ProductInfoList{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-right: 1px solid #9c9c9c;
+    width: 20%;
+}
+.ProductInfoItem{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}

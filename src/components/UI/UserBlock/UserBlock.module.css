@@ -1,0 +1,86 @@
+.UserBlock{
+    position: relative;
+    margin-left: 20px;
+    padding-left: 20px;
+    border-left: 1px solid #D3D3D3;
+}
+.UserEmail{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+.UserIcon{
+    position: relative;
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+}
+.UserIcon img{
+    width: 100%;
+    object-fit: cover;
+}
+.UserInfo{
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    white-space: nowrap;
+    padding: 1.5rem;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    gap: 1.5rem;
+    top: 150%;
+    right: 0;
+    font-size: .75rem;
+    z-index: 1115;
+    transition: .3s;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2);
+    display: none;
+}
+.UserInfo span{
+    font-size: 1rem; 
+    font-weight: 500;
+    margin-left: 7px;
+}
+.UserInfo button{
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    background: none;
+    border: none;
+    outline: none;
+    font-size: .9rem;
+    padding: 7px 15px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: .3s;
+}
+.UserInfo button:hover{
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.25);
+}
+.UserBlockActive .UserEmail::before{
+    position: absolute;
+    content: '';
+    width: 130%;
+    height: 130%;
+    border-radius: 50%;
+    border: 1px solid #0099E3;
+    top: -19%;
+    left: -18%;
+}
+.UserBlockActive .UserInfo{display: flex;;}
+
+.UserInfo a{
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+    color:rgba(0, 0, 0, 0.71);
+    transition: .3s;
+}
+.UserInfo a:hover{color: #000;}

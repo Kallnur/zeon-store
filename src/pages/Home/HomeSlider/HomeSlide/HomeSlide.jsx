@@ -10,7 +10,7 @@ const HomeSlide = ({obj}) => {
           <img src={obj.url} alt={obj.desk} />
         </Link>
       </div>
-  )
+    )
   }
 
 export default HomeSlide

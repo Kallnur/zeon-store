@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux"
-import { addToSort } from "../store/searchSort"
+import { addToSort } from "../store/reducers/searchSort"
 
 
 export default function useSearchSort() {

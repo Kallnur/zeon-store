@@ -6,9 +6,15 @@ import PageTitle from '../../components/PageTitle/PageTitle'
 import Pagination from '../../components/Pagination/Pagination'
 import Product from '../../components/Product/Product'
 import usePagination from '../../hooks/usePagination'
-import { toogleCrumb } from '../../store/breadcrumb'
-import favorite from '../../store/favorite'
+import { toogleCrumb } from '../../store/reducers/breadcrumb'
 import classCss from './Favorites.module.css'
+
+export const FavoritesLength = () => {
+  const faforites = useSelector(state => state.favorite.favorite)
+  return(
+    <span> {faforites.length}</span>
+  )
+}
 
 const Favorits = () => {
 
@@ -19,8 +25,6 @@ const Favorits = () => {
   const [page, setPage] = useState(1)
   const paginationIn = usePagination(),
         {totalPage, RPage, lastInd, firstInd} = paginationIn(faforites, page, 12)
-
-  console.log(totalPage, RPage, lastInd, firstInd);
 
   const togglePage = (page) => {setPage(page)};
 

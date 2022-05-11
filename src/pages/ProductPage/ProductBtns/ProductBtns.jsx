@@ -1,12 +1,14 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import classCss from '../ProductPage.module.css'
 import { Busket, Heart, WhiteHeart } from '../../../components/Icons/Icons'
 import useToggleFavorite from '../../../hooks/useToggleFavorite';
 import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { checkColor } from '../../../utils/allFunc';
-import { addToBusket } from '../../../store/basket';
-import {productUpdateColor} from '../../../store/product'
+import { addToBusket } from '../../../store/reducers/basket';
+import {productUpdateColor} from '../../../store/reducers/product'
+import { Context } from '../../..';
+import { useAuthState } from 'react-firebase-hooks/auth';
 
 const ProductBtns = ({info, visi, setVisi}) => {
 
@@ -15,20 +17,34 @@ const ProductBtns = ({info, visi, setVisi}) => {
     const { toggleFavorite } = useToggleFavorite({info, setVisi})
     const [toggleButtons, setToggleButtons] = useState(false)
     const [activeColor, setActiveColor] = useState([]);
-    console.log(activeColor)
+    const {auth, firestore} = useContext(Context)
+    const [user] = useAuthState(auth)
     
     // console.log(product)
     const newActiveColor = () => setActiveColor(info.colors.filter(color => color.available === false))
+
+
+    const addFirestore = async (info, color) => {
+        if(user && color){
+            let tempDoc = {productId: info.id, productColor: color.color}
+          await firestore.collection('users')
+            .doc(user.uid)
+              .collection('basket')
+                .doc(JSON.stringify(tempDoc))
+                  .set({product: {...info, color: color}})
+        }
+      }
 
     const toggleBasket = () => {
         console.log(activeColor, info.colors)
         if(activeColor.length){
             if(!checkColor(basket, activeColor, info)){
+                addFirestore(info, activeColor[0])
                 dispatch(addToBusket(info))
                 setToggleButtons(false)
             }else {
                 setToggleButtons(false)
-            }            
+            }
         }
     }
 

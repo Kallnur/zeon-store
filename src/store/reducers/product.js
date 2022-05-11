@@ -1,6 +1,6 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
-import GetServ from "../components/API/GetServ";
-import { addKeyInObj } from "../utils/allFunc";
+import GetServ from "../../components/API/GetServ";
+import { addKeyInObj } from "../../utils/allFunc";
 
 export const getProducts = createAsyncThunk(
     'product/getProduct',

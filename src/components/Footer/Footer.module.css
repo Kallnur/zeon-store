@@ -1,12 +1,16 @@
 .Footer{
     position: relative;
-    padding: 50px 0 70px 0;
+    padding: 50px 0 65px 0;
     background: #1D1D1B;
 }
 
 .FooterBody{
     display: flex;
     justify-content: space-between;
+}
+
+.FooterBody > a{
+    margin: auto 0;
 }
 
 .Footer a{

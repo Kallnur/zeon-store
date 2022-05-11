@@ -6,7 +6,7 @@ import HomeProduct from './HomeProduct/HomeProduct'
 import CollectionGroup from '../../components/CollectionGroup/CollectionGroup'
 import MobHomeProduct from './HomeProduct/MobHomeProduct'
 import MobCollectionGroup from '../../components/CollectionGroup/MobCollectionGroup'
-import { toogleCrumb } from '../../store/breadcrumb'
+import { toogleCrumb } from '../../store/reducers/breadcrumb'
 import { useDispatch } from 'react-redux'
 
 const Home = () => {

@@ -22,7 +22,6 @@ export const checkPerc = (products) => {
     perc.map(obj => {
       let price = obj.price * obj.basket;
       let perc  = newPrice(price, obj.perc)
-      console.log(price, perc)
       return allPerc += price - perc
     })
   }

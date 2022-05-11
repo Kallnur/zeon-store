@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import { useForm } from 'react-hook-form';
 import { Link } from 'react-router-dom';
 import { Mark } from '../Icons/Icons';
@@ -9,32 +9,52 @@ import PhoneInput from 'react-phone-number-input';
 import 'react-phone-number-input/style.css';
 import axios from 'axios';
 import { useDispatch, useSelector } from 'react-redux';
-import { allPrice, amountLines, amountProduct } from '../../utils/calcBasket';
-import { clearBasket } from '../../store/basket';
+import { allPrice, amountLines, amountProduct, checkPerc } from '../../utils/calcBasket';
+import { clearBasket } from '../../store/reducers/basket';
+import { Context } from '../..';
+import { useAuthState } from 'react-firebase-hooks/auth';
 
 const ModalOrder = ({done, setDone, setModalVisi}) => {
 
-  const [phoneValue, setPhoneValue] = useState('')
-
+  const [phoneValue, setPhoneValue] = useState('');
+  const {auth, firestore} = useContext(Context);
+  const [user] = useAuthState(auth);
+  const userName = user.displayName.split(' ');
   const { register, formState:{errors, isValid}, handleSubmit, reset} = useForm({mode: 'onChange'});
 
   const products = useSelector(state => state.basket.basket)
   const dispatch = useDispatch();
 
+  const clearFireBasket = () => {
+    if(user) firestore.collection('users').doc(user.uid)
+                .collection('basket').get().then(obj => {
+                  obj.forEach(doc => {
+                    doc.ref.delete()
+                  })
+                })
+  }
+
   const onSubmit = data => {
     const product = {
-      products: products.map(obj => {return {id: obj.id, code: obj.code,color: obj.color}}),
+      products: products.map(obj => {return {color: obj.color.color, amount: obj.basket, name: obj.collection}}),
       countLine: amountLines(products),
       countProduct: amountProduct(products),
+      perc: !checkPerc(products) ? false : checkPerc(products),
       allPrice: allPrice(products)
     }
-    axios.post('http://localhost:3003/order', {infoUser: {...data, phone: phoneValue}, infoProduct: product})
 
+    firestore.collection('users')
+          .doc(user.uid)
+            .collection('historyOrder')
+              // .doc(JSON.stringify(info.id))
+                .add({product: product})
+
+    axios.post('http://localhost:3003/order', {infoUser: {...data, phone: phoneValue}, infoProduct: product})
+    clearFireBasket()
+    
     reset();
     setDone(true)
     dispatch(clearBasket());
-    // if(!done) setModalVisi(false)
-    // setModalVisi(false)
   }
 
   return (
@@ -45,15 +65,15 @@ const ModalOrder = ({done, setDone, setModalVisi}) => {
                 <div className={classCss.ModalFormBody}>
                   <InputOrder 
                     classCss={classCss} label='Ваше имя' name='name' register={register} 
-                    errors={errors} placeholder='Например Иван' errName={errors?.name}
+                    value={userName[0]} placeholder='Например Иван' errName={errors?.name}
                   />
                   <InputOrder 
                     classCss={classCss} label='Ваше фамилия' name='lastName' register={register} 
-                    errors={errors} placeholder='Например Иванов' errName={errors?.lastName}
+                    value={userName[1]} placeholder='Например Иванов' errName={errors?.lastName}
                   />
                   <InputOrder 
                     classCss={classCss} label='Электронная почта' name='email' register={register} 
-                    errors={errors} placeholder='example@mail.com' type={'email'} errName={errors?.email}
+                    value={user.email} placeholder='example@mail.com' type={'email'} errName={errors?.email}
                   />
                   <PhoneInput name={'phone'} required placeholder="Введите номер телефона" 
                     value={phoneValue} minLength={9} onChange={setPhoneValue}/>

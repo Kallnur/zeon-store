@@ -1,60 +1,28 @@
-import React, { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
-import GetServ from '../../API/GetServ'
+import React, { useContext, useEffect, useState } from 'react'
+import { useAuthState } from 'react-firebase-hooks/auth'
+import { Context } from '../../..'
+import UserBlock from '../../UI/UserBlock/UserBlock'
 import classCss from '../Header.module.css'
+import { HeaderTel, Headlist } from '../HeaderComponents/HeaderComponents'
 
-export const Headlist = ({toggleVisi}) => {
-
-    return(
-    <ul className={classCss.HeaderList}>
-        <li onClick={toggleVisi}>
-            <Link to='/about-us'>O нас</Link>
-        </li>
-        <li onClick={toggleVisi}>
-            <Link to='/collection'>Коллекция</Link>
-        </li>
-        <li onClick={toggleVisi}>
-            <Link to='news'>Новости</Link>
-        </li>
-    </ul>)
-}
-
-export const HeaderTel = () => {
-
-    const [phoneNumber, setPhoneNumber] = useState();
-
-    const getPhoneNumber = async () => {
-        const response = await GetServ.getPhoneNumber();
-        setPhoneNumber(response.data)
-    }
-
-    useEffect(() => {
-        getPhoneNumber();
-    }, [])
-
-    return(
-        <div className={classCss.HeaderTel}>
-            <span>
-                Тел : 
-                {
-                    !phoneNumber
-                    ?
-                    <h1>Phone number not found</h1>
-                    :
-                    phoneNumber.map(obj => 
-                        <a href={obj.url} key={obj.txt}>{obj.txt}</a>
-                    )
-                }
-            </span>
-        </div>        
-    )
-}
 
 const HeaderNavbar = () => {
+
+    const {auth} = useContext(Context)
+    const [user] = useAuthState(auth);
+
   return (
     <nav className={classCss.HeaderNavbar}>
         <Headlist/>
-        <HeaderTel/>
+        <div className={classCss.HeaderTelAndUser}>
+            <HeaderTel/>
+            {user
+            ?
+            <UserBlock/>
+            :
+            <></>
+            }
+        </div>
     </nav>
   )
 }

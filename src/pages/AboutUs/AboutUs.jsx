@@ -2,7 +2,8 @@ import React, { useEffect, useState } from 'react'
 import classCss from './AboutUs.module.css'
 import GetServ from '../../components/API/GetServ'
 import { useDispatch } from 'react-redux'
-import { addCrumb, toogleCrumb } from '../../store/breadcrumb'
+import { addCrumb, toogleCrumb } from '../../store/reducers/breadcrumb'
+import Loader from '../../components/Loader/Loader'
 
 const AboutUs = () => {
 
@@ -31,7 +32,7 @@ const AboutUs = () => {
         <div className={classCss.AboutBody}>
           {!aboutData
           ?
-          <h1>Data not found</h1>
+          <Loader/>
           :
           <>
           <ul className={classCss.AboutImageBlock}>

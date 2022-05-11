@@ -5,8 +5,6 @@ import classCss from './Breadcrumb.module.css'
 
 const PagePath = ({crumb}) => {
 
-  console.log(crumb);
-
   return (
     crumb.length <= 1
     ?
@@ -18,7 +16,6 @@ const PagePath = ({crumb}) => {
           crumb.length > 1
           ?
           crumb.map((obj, i) => {
-            console.log(obj);
             if(i === crumb.length - 1) return <span key={obj.href} className={classCss.Crumbs}>{obj.txt}</span>
             else return <Link key={obj.href} className={classCss.Crumbs} to={obj.href}>{obj.txt} <span>/</span></Link>
           })

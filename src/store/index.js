@@ -1,9 +1,10 @@
 import { configureStore } from "@reduxjs/toolkit";
-import basket from "./basket";
-import breadcrumb from "./breadcrumb";
-import favorite from "./favorite";
-import product from "./product";
-import searchSort from "./searchSort";
+import basket from "./reducers/basket";
+import breadcrumb from "./reducers/breadcrumb";
+import favorite from "./reducers/favorite";
+import orders from "./reducers/orders";
+import product from "./reducers/product";
+import searchSort from "./reducers/searchSort";
 
 export default configureStore({
     reducer: {
@@ -11,6 +12,7 @@ export default configureStore({
         basket: basket,
         favorite: favorite,
         searchSort: searchSort,
-        breadcrumb: breadcrumb
+        breadcrumb: breadcrumb,
+        orders: orders
     }
 })

@@ -9,4 +9,5 @@ export const HOME   = '/',
       OFFER         = '/offer',
       SEARCH_RESULT = '/res-search/:id',
       PRODUCT_ID    = '/product/:id',
+      HISTORY_ORDER = '/history',
       NOT_FOUND     = '*'

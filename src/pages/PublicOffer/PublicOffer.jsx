@@ -3,7 +3,8 @@ import GetServ from '../../components/API/GetServ';
 import classCss from './PublicOffer.module.css';
 import Paraph from './Paraph/Paraph';
 import { useDispatch } from 'react-redux';
-import { toogleCrumb } from '../../store/breadcrumb';
+import { toogleCrumb } from '../../store/reducers/breadcrumb';
+import Loader from '../../components/Loader/Loader';
 
 const PublicOffer = () => {
 
@@ -28,7 +29,7 @@ const PublicOffer = () => {
         <div className={classCss.OfferBody}>
           {!offerData 
             ? 
-            <h1>Obj not  fount</h1>
+            <Loader/>
             :
             <>
               <h1 className={classCss.OfferTitle}>{offerData.title}</h1>

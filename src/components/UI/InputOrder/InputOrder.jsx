@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-const InputOrder = ({classCss, label, name, register, errors, placeholder, type, errName}) => {
+const InputOrder = ({classCss, label, name, register, value, placeholder, type, errName}) => {
  
     let classErr = [];
 
@@ -14,7 +14,8 @@ const InputOrder = ({classCss, label, name, register, errors, placeholder, type,
     <div className={classCss.FormInpBlock}>
       <label className={classErr}>
         {label}
-        <input type={type} {...register(name, {required: true, minLength: 3})} placeholder={placeholder}/>
+        <input type={type} {...register(name, {required: true, minLength: 3, value: value})} 
+          placeholder={placeholder}/>
       </label>
     </div>
   )

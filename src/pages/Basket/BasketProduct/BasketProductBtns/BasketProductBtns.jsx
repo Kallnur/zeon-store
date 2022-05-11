@@ -1,18 +1,31 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
+import { useAuthState } from 'react-firebase-hooks/auth';
 import { useDispatch } from 'react-redux';
-import { decBasketAmount, incBasketAmount } from '../../../../store/basket';
+import { Context } from '../../../..';
+import { decBasketAmount, incBasketAmount } from '../../../../store/reducers/basket';
 import classCss from '../BasketProduct.module.css'
 
 const BasketProductBtns = ({info, amount, setAmount}) => {
 
     let incClass = '', decClass = '';
     const dispatch = useDispatch();
+    const {auth, firestore} = useContext(Context);
+    const [user] = useAuthState(auth);
+    let tempDoc = {productId: info.id, productColor: info.color.color};
+    const fireBasketProduct = firestore.collection('users')
+        .doc(user.uid).collection('basket').doc(JSON.stringify(tempDoc))
 
-    const incAmount = () => {
-        if(amount < 10) dispatch(incBasketAmount(info))
+    const incAmount = async () => {
+        if(amount < 10) {
+            dispatch(incBasketAmount(info))
+            // await fireBasketProduct.update({basket: amount})
+        }
     };
-    const decAmount = () => {
-        if(amount > 1) dispatch(decBasketAmount(info))
+    const decAmount = async () => {
+        if(amount > 1) {
+            dispatch(decBasketAmount(info))
+            // await fireBasketProduct.update({basket: amount})
+        }
     };
 
     // const incAmount = dispatch(incBasketAmount(info));

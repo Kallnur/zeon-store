@@ -31,7 +31,7 @@ export const getTotalPages = async (state, setState, serv) => {
 }
 
 export const checkArr = (arr, obj) => {
-    if(arr.length){
+    if(arr && arr.length && obj){
         for(let i = 0; i < arr.length; i++){
             if(arr[i].id === obj.id) return true
             else continue
